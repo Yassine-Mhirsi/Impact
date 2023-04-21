@@ -15,6 +15,8 @@ include ('connect.php') ;
     $req->bindValue(':password', $password, PDO::PARAM_STR);
     $req->bindValue(':role', $role, PDO::PARAM_STR);
     
-    $req->execute();
+    if($req->execute()){
+        header('location:main.html');
+    };
 
 ?>
