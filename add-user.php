@@ -16,7 +16,7 @@ include ('connect.php') ;
     $req->bindValue(':role', $role, PDO::PARAM_STR);
     
     if($req->execute()){
-        header('location:main.html');
+        header('location:user-profile.php');
     };
 
 ?>
