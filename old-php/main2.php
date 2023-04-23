@@ -88,7 +88,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="./user-profile/index.php">Login</a></li>
+          <li><a href="./user-profile.php?id_user=<?=$id?>">Profile</a></li>
         </ul>
       </nav><!-- .navbar -->
 

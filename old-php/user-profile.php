@@ -1,6 +1,9 @@
 <?php
-require 'connect.php';
-
+include ('connect.php') ;
+$affiche = $con->prepare('SELECT * FROM user where id_user=:num');
+$affiche->bindValue(':num',$_GET['iduser'],PDO::PARAM_INT);
+$ExecuteIsOk = $affiche->execute();
+$users=$affiche->fetch();
 ?>
 
 
@@ -33,9 +36,11 @@ require 'connect.php';
                     </div>
                     <div class="col-md-6">
                         <div class="profile-head">
+                        <?php foreach($user as $users): ?>  
                                     <h3>
-                                        .$name.
+                                    <?=$users['name'] ?>
                                     </h3>
+                        <?php endforeach; ?>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
