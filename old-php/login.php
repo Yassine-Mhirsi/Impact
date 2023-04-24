@@ -7,7 +7,7 @@ if(isset($_POST['login-submit']))
 $status='1';
 $email=$_POST['login-email'];
 $password=$_POST['login-password'];
-$sql ="SELECT email,password FROM users WHERE email=:email and password=:password and status=(:status)";
+$sql ="SELECT * FROM users WHERE email=:email and password=:password and status=(:status)";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
@@ -17,8 +17,9 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
 {
 $_SESSION['alogin']=$_POST['login-email'];
-header("location:profile.php");
-echo "<script type='text/javascript'> document.location = 'profile.php'; </script>";
+// $_SESSION['aid']=$results['id'];
+// header("location:profile.php");
+echo "<script type='text/javascript'> document.location = '../main.php'; </script>";
 } else{
   
   echo "<script>alert('Invalid Details Or Account Not Confirmed');</script>";
