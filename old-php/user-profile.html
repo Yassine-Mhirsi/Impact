@@ -1,12 +1,10 @@
-<?php
+<!-- <?php
 include ('connect.php') ;
 $affiche = $con->prepare('SELECT * FROM user where id_user=:num');
 $affiche->bindValue(':num',$_GET['iduser'],PDO::PARAM_INT);
 $ExecuteIsOk = $affiche->execute();
 $users=$affiche->fetch();
-?>
-
-
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,16 +16,16 @@ $users=$affiche->fetch();
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
 </head>
 <body>
-<a href="./main.html" class="faith-button">Faith<span>.</span></a>
+<a href="../main.html" class="faith-button">Faith<span>.</span></a>
 <div class="container emp-profile">
             <form method="post">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="./assets/img/user.png" alt=""/>
+                            <img src="../assets/img/user.png" alt=""/>
                             <div class="file btn btn-lg btn-primary">
                                 Change Photo
                                 <input type="file" name="file"/>
@@ -36,11 +34,11 @@ $users=$affiche->fetch();
                     </div>
                     <div class="col-md-6">
                         <div class="profile-head">
-                        <?php foreach($user as $users): ?>  
+                        <!-- <?php foreach($user as $users): ?>   -->
                                     <h3>
-                                    <?=$users['name'] ?>
+                                    user name
                                     </h3>
-                        <?php endforeach; ?>
+                        <!-- <?php endforeach; ?> -->
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>

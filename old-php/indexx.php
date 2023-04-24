@@ -5,7 +5,7 @@ if(isset($_POST['login']))
 {
 $status='1';
 $email=$_POST['username'];
-$password=md5($_POST['password']);
+$password=$_POST['password'];
 $sql ="SELECT email,password FROM users WHERE email=:email and password=:password and status=(:status)";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
@@ -36,7 +36,21 @@ echo "<script type='text/javascript'> document.location = 'profile.php'; </scrip
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	
+	<style>
+		body {
+		background-color: #008374 !important;
+		/* background-repeat: no-repeat; */
+		/* background-size: 90%; */
+		}
+		h1.text-center {
+    	color: white;}
+		.well {
+			background-color: #008374 !important;
+		}
+
+
+	</style>
+
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
