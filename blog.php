@@ -1,3 +1,14 @@
+<?php
+session_start();
+error_reporting(0);
+include('includes/config.php');
+$email = $_SESSION['alogin'];
+$sql = "SELECT * from users where email = (:email);";
+$query = $dbh->prepare($sql);
+$query->bindParam(':email', $email, PDO::PARAM_STR);
+$query->execute();
+$result = $query->fetch(PDO::FETCH_OBJ);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,7 +99,26 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <?php if (isset($_SESSION['alogin'])) { ?>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="bi bi-person" style="font-size: 2em;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="profile.php"><?php echo htmlentities($result->name);?></a></li>
+                <li><a href="logout.php">Sign Out</a></li>
+              </ul>
+            </li>
+          <?php } else { ?>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="bi bi-person" style="font-size: 2em;"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="login.php">Login</a></li>
+              </ul>
+            </li>
+          <?php } ?>
         </ul>
       </nav><!-- .navbar -->
 
