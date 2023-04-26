@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
-include('./includes/config.php');
+include('includes/config.php');
 
 $date = date("Y-m-d H:i:s");
 $email = $_SESSION['alogin'];
@@ -14,7 +14,6 @@ $cnt = 1;
 
 if (isset($_POST['comment-submit'])) {
   // header('location:test.php');
-  // echo 'test!';
   if (strlen($_SESSION['alogin']) == 0) {
     header('location:login.php');
   } else {
@@ -28,8 +27,6 @@ if (isset($_POST['comment-submit'])) {
     $query->bindParam(':email', $result->email, PDO::PARAM_STR);
     $query->bindParam(':date', $date, PDO::PARAM_STR);
     $query->execute();
-  //   $_SESSION['ok']='ok';
-  //  unset($_POST['comment-submit']);
   }
 }
 
@@ -42,6 +39,7 @@ if (isset($_POST['comment-submit'])) {
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- <meta http-equiv="refresh" content="60; blog-details.php"> -->
 
   <title>Impact Bootstrap Template - Blog Details</title>
   <meta content="" name="description">
@@ -78,6 +76,17 @@ if (isset($_POST['comment-submit'])) {
 </head>
 
 <body>
+<script>
+    var comment = document.getElementById("comment").value;
+    function validateForm() {
+        if (comment == "") {
+            alert("Please enter a comment.");
+            return false;
+            
+        }
+    }
+</script>
+
   <!-- ======= Header ======= -->
   <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -307,18 +316,18 @@ if (isset($_POST['comment-submit'])) {
 
 
 
-            <?php include('comments.php');?>
+            <?php  include('comments.php');?>
 
 
 
               <!-- End comment #5 -->
               <div class="reply-form">
                 <h4>Leave a Reply</h4>
-                <!-- <p>Your email address will not be published. Required fields are marked * </p> -->
-                <form method="POST">
+                <!-- <p>  Your email address will not be published. Required fields are marked * </p> -->
+                <form method="POST" onsubmit="return validateForm()">
                   <div class="row">
                     <div class="col form-group">
-                      <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
+                      <textarea name="comment" id="comment" rows="4" class="form-control" placeholder="Your Comment" Required></textarea>
                     </div>
                   </div>
                   <button type="submit" name="comment-submit" class="btn btn-primary">Post Comment</button>
