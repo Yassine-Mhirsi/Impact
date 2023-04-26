@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
-include('C:\wamp64\www\pi\Faith\Impact\user-profile\includes\config.php');
+include('./includes/config.php');
 if(isset($_SESSION['alogin']))
 {
     $email = $_SESSION['alogin'];
@@ -76,7 +76,7 @@ if(isset($_SESSION['alogin']))
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="main.html" class="logo d-flex align-items-center">
+      <a href="main.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Journeys of Faith<span>.</span></h1>
@@ -88,7 +88,7 @@ if(isset($_SESSION['alogin']))
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.php">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i
                 class="bi bi-chevro  n-down dropdown-indicator"></i></a>
             <ul>
@@ -114,8 +114,8 @@ if(isset($_SESSION['alogin']))
                 <i class="bi bi-person" style="font-size: 2em;"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="./old-php/profile.php"><?php echo htmlentities($result->name);?></a></li>
-                <li><a href="./old-php/logout.php">Sign Out</a></li>
+                <li><a href="profile.php"><?php echo htmlentities($result->name);?></a></li>
+                <li><a href="logout.php">Sign Out</a></li>
               </ul>
             </li>
           <?php } else { ?>
@@ -124,7 +124,7 @@ if(isset($_SESSION['alogin']))
                 <i class="bi bi-person" style="font-size: 2em;"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="./old-php/login.php">Login</a></li>
+                <li><a href="login.php">Login</a></li>
               </ul>
             </li>
           <?php } ?>
