@@ -10,6 +10,8 @@ if(isset($_SESSION['alogin']))
 		$query-> bindParam(':email', $email, PDO::PARAM_STR);
 		$query->execute();
 		$result=$query->fetch(PDO::FETCH_OBJ);
+
+    //test bokri
 }
 ?>
 
