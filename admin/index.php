@@ -38,7 +38,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <a href="./main.html" class="faith-button">Faith<span>.</span></a>
+  <a href="../main.php" class="faith-button">Faith<span>.</span></a>
   <div class="container" style="height: 55%;">
     <input type="checkbox" id="flip">
     <div class="cover">

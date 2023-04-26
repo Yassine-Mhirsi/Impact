@@ -1,5 +1,5 @@
 <div class="brand clearfix">
-<a href="..../main.html" class="faith-button" style="position: absolute;
+<a href="../main.php" class="faith-button" style="position: absolute;
   left: 10px;
   padding: 10px 20px;
   background-color: none;
