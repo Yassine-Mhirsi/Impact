@@ -102,7 +102,8 @@ $result = $query->fetch(PDO::FETCH_OBJ);
           <?php if (isset($_SESSION['alogin'])) { ?>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="bi bi-person" style="font-size: 2em;"></i>
+                <!-- <i class="bi bi-person" style="font-size: 2em;"></i> -->
+                <img style="height:40px;width:40px;"src="images/<?php echo htmlentities($result->image);?>">
               </a>
               <ul class="dropdown-menu">
                 <li><a href="profile.php"><?php echo htmlentities($result->name);?></a></li>
