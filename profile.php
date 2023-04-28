@@ -88,6 +88,12 @@ if(isset($_POST['submit']))
 }
 		</style>
 
+<script type="text/javascript">
+	function myFunction() {
+  document.querySelector("body").style.backgroundImage = "none";
+}
+</script>
+
 
 </head>
 
@@ -142,7 +148,7 @@ if(isset($_POST['submit']))
 
 <div class="form-group">
 	<div class="col-sm-8 col-sm-offset-2">
-		<button class="btn btn-primary" name="submit" type="submit">Save Changes</button>
+		<button class="btn btn-primary" name="submit" type="submit" onclick="myFunction()">Save Changes</button>
 	</div>
 </div>
 

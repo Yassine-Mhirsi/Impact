@@ -51,7 +51,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
 <body>
 
   <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar d-flex align-items-center">
+  <!-- <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
@@ -64,7 +64,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
-  </section><!-- End Top Bar -->
+  </section> -->
 
   <header id="header" class="header d-flex align-items-center">
 

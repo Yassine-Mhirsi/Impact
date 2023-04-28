@@ -113,7 +113,7 @@ function validate()
 </head>
 <body>
   <a href="main.php" class="faith-button">Faith<span>.</span></a>
-  <div class="container" style="height: 55%;">
+  <div class="container" style="height: 80%;width:75%;">
     <input type="checkbox" id="flip">
     <div class="cover">
       <div class="front">

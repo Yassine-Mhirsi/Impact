@@ -2,16 +2,15 @@
 session_start();
 error_reporting(0);
 include('./includes/config.php');
-if(isset($_SESSION['alogin']))
-{
-    $email = $_SESSION['alogin'];
-		$sql = "SELECT * from users where email = (:email);";
-		$query = $dbh -> prepare($sql);
-		$query-> bindParam(':email', $email, PDO::PARAM_STR);
-		$query->execute();
-		$result=$query->fetch(PDO::FETCH_OBJ);
+if (isset($_SESSION['alogin'])) {
+  $email = $_SESSION['alogin'];
+  $sql = "SELECT * from users where email = (:email);";
+  $query = $dbh->prepare($sql);
+  $query->bindParam(':email', $email, PDO::PARAM_STR);
+  $query->execute();
+  $result = $query->fetch(PDO::FETCH_OBJ);
 
-    //test bokri
+  //test bokri
 }
 ?>
 
@@ -57,21 +56,22 @@ if(isset($_SESSION['alogin']))
   ======================================================== -->
 </head>
 <!-- hello -->
-<body>
-<script>
-  window.intercomSettings = {
-    api_base: "https://api-iam.intercom.io",
-    app_id: "rn3v2onm",
-    name: <?php echo json_encode($result->name) ?>, // Full name
-    email: <?php echo json_encode($result->email) ?>, // Email address
-    created_at: "<?php echo strtotime($current_user->created_at) ?>" // Signup date as a Unix timestamp
-  };
-</script>
 
-<script>
-// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/rn3v2onm'
-(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/rn3v2onm';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-</script> 
+<body>
+  <script>
+    window.intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      app_id: "rn3v2onm",
+      name: <?php echo json_encode($result->name) ?>, // Full name
+      email: <?php echo json_encode($result->email) ?>, // Email address
+      created_at: "<?php echo strtotime($current_user->created_at) ?>" // Signup date as a Unix timestamp
+    };
+  </script>
+
+  <script>
+    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/rn3v2onm'
+    (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/rn3v2onm'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (document.readyState === 'complete') { l(); } else if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();
+  </script>
 
   <!-- ======= Header ======= -->
   <!-- <section id="topbar" class="topbar d-flex align-items-center">
@@ -128,10 +128,13 @@ if(isset($_SESSION['alogin']))
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <!-- <i class="bi bi-person" style="font-size: 2em;"></i> -->
-                <img style="height:40px;width:40px;"src="images/<?php echo htmlentities($result->image);?>">
+                <img style="height:40px;width:40px;border-radius: 50%;"
+                  src="images/<?php echo htmlentities($result->image); ?>">
               </a>
               <ul class="dropdown-menu">
-                <li><a href="profile.php"><?php echo htmlentities($result->name);?></a></li>
+                <li><a href="profile.php">
+                    <?php echo htmlentities($result->name); ?>
+                  </a></li>
                 <li><a href="logout.php">Sign Out</a></li>
               </ul>
             </li>
@@ -1180,11 +1183,9 @@ if(isset($_SESSION['alogin']))
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="main.html" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <h1>Journeys of Faith<span>.</span></h1>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p> -->
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -1232,14 +1233,15 @@ if(isset($_SESSION['alogin']))
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+        &copy;
+        Journeys of Faith<span>.</span>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
 
