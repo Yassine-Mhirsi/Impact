@@ -27,7 +27,7 @@ echo "<script type='text/javascript'> document.location = './main.php'; </script
 }
 
 }
-
+// signup php
 if(isset($_POST['signup-submit']))
 {
 $file = $_FILES['image']['name'];
