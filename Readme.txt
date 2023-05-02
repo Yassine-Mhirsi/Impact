@@ -6,6 +6,8 @@ Hi
 
 -Local guide recommendations: A feature that provides users with recommendations for local guides who can help them navigate unfamiliar pilgrimage routes and provide historical and cultural insights.
 
+-Zakat calculator
+
 donate
 chatbot using chatgpt
 map
