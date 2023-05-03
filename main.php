@@ -47,6 +47,20 @@ if (isset($_SESSION['alogin'])) {
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- CSS here -->
+  <!-- <link rel="stylesheet" href="css2/bootstrap.min.css">
+  <link rel="stylesheet" href="css2/owl.carousel.min.css">
+  <link rel="stylesheet" href="css2/magnific-popup.css">
+  <link rel="stylesheet" href="css2/font-awesome.min.css">
+  <link rel="stylesheet" href="css2/themify-icons.css">
+  <link rel="stylesheet" href="css2/nice-select.css">
+  <link rel="stylesheet" href="css2/flaticon.css">
+  <link rel="stylesheet" href="css2/gijgo.css">
+  <link rel="stylesheet" href="css2/animate.css">
+  <link rel="stylesheet" href="css2/slicknav.css"> -->
+  <link rel="stylesheet" href="css2/stylee.css">
+  <!-- <link rel="stylesheet" href="css2/responsive.css"> -->
+
   <!-- =======================================================
   * Template Name: Impact
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -58,6 +72,7 @@ if (isset($_SESSION['alogin'])) {
 <!-- hello -->
 
 <body>
+
   <script>
     window.intercomSettings = {
       api_base: "https://api-iam.intercom.io",
@@ -105,10 +120,9 @@ if (isset($_SESSION['alogin'])) {
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="blog.php">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i
-                class="bi bi-chevro  n-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#"><span>Features</span><i
+                class="bi bi-chevro  n-down dropdown-indicator bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
                     class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
@@ -148,7 +162,17 @@ if (isset($_SESSION['alogin'])) {
               </ul>
             </li>
           <?php } ?>
+          <?php
+              $apiKey = 'fba3aa09fa30561ab5820639d64ec856';
+              $cityId = '104515';
+              $apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=$cityId&appid=$apiKey&units=metric";
+              $response = json_decode(file_get_contents($apiUrl));
+              $temp = round($response->main->temp);
+              $city = $response->name;
+              echo '<li style="float:left;align:left;"><a href="https://openweathermap.org/city/104515" target="_blank">' . $city . ': ' . $temp . '°C</a></li>';
+              ?>
         </ul>
+
       </nav><!-- .navbar -->
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -815,77 +839,69 @@ if (isset($_SESSION['alogin'])) {
       </div>
     </section><!-- End Our Team Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing sections-bg">
-      <div class="container" data-aos="fade-up">
+    <section>
+      <div data-scroll-index='1' class="make_donation_area section_padding">
+        <div class="containerr">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="section_title text-center mb-55">
+                <h3><span>Make a Donation</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <form action="#" class="donation_form">
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <div class="single_amount">
+                      <div class="input_field">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">$</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="40,200" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="single_amount">
+                      <div class="fixed_donat d-flex align-items-center justify-content-between">
+                        <div class="select_prise">
+                          <h4>Select Amount:</h4>
+                        </div>
+                        <div class="single_doonate">
+                          <input type="radio" id="blns_1" name="radio-group" checked>
+                          <label for="blns_1">10</label>
+                        </div>
+                        <div class="single_doonate">
+                          <input type="radio" id="blns_2" name="radio-group" checked>
+                          <label for="blns_2">30</label>
+                        </div>
+                        <div class="single_doonate">
+                          <input type="radio" id="Other" name="radio-group" checked>
+                          <label for="Other">Other</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="donate_now_btn text-center">
+                <a href="#" class="boxed-btn4">Donate Now</a>
+              </div>
+            </div>
 
-        <div class="section-header">
-          <h2>Pricing</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis
-            omnis tiledo stran delop</p>
+          </div>
         </div>
-
-        <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
-
-          <div class="col-lg-4">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <div class="icon">
-                <i class="bi bi-box"></i>
-              </div>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4">
-            <div class="pricing-item featured">
-              <h3>Business Plan</h3>
-              <div class="icon">
-                <i class="bi bi-airplane"></i>
-              </div>
-
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bi bi-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <div class="icon">
-                <i class="bi bi-send"></i>
-              </div>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bi bi-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
       </div>
-    </section><!-- End Pricing Section -->
+    </section>
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq">
