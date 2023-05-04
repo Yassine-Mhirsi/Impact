@@ -11,6 +11,7 @@ if (isset($_SESSION['alogin'])) {
   $result = $query->fetch(PDO::FETCH_OBJ);
 
   //test bokri
+
 }
 ?>
 
@@ -47,19 +48,6 @@ if (isset($_SESSION['alogin'])) {
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- CSS here -->
-  <!-- <link rel="stylesheet" href="css2/bootstrap.min.css">
-  <link rel="stylesheet" href="css2/owl.carousel.min.css">
-  <link rel="stylesheet" href="css2/magnific-popup.css">
-  <link rel="stylesheet" href="css2/font-awesome.min.css">
-  <link rel="stylesheet" href="css2/themify-icons.css">
-  <link rel="stylesheet" href="css2/nice-select.css">
-  <link rel="stylesheet" href="css2/flaticon.css">
-  <link rel="stylesheet" href="css2/gijgo.css">
-  <link rel="stylesheet" href="css2/animate.css">
-  <link rel="stylesheet" href="css2/slicknav.css"> -->
-  <link rel="stylesheet" href="css2/stylee.css">
-  <!-- <link rel="stylesheet" href="css2/responsive.css"> -->
 
   <!-- =======================================================
   * Template Name: Impact
@@ -1098,27 +1086,44 @@ if (isset($_SESSION['alogin'])) {
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
+            <form action="main-feedback.php" method="post" class="php-email-form">
+              <?php if (isset($_SESSION['alogin'])) { ?>
+              <!-- <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="feedback-name" class="form-control" id="name" placeholder="Your Name"
+                    required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="feedback-email" id="email" placeholder="Your Email"
+                    required>
                 </div>
+              </div> -->
+              <?php } else { ?>
+                <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="feedback-name" class="form-control" id="name" placeholder="Your Name"
+                    required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="feedback-email" id="email" placeholder="Your Email"
+                    required>
+                </div>
+              </div> <?php } ?>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="feedback-subject" id="subject" placeholder="Subject"
+                  required>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="feedback-message" rows="7" placeholder="Message"
+                  required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" name="feedback-submit">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -1212,7 +1217,7 @@ if (isset($_SESSION['alogin'])) {
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

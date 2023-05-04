@@ -122,10 +122,10 @@ if(isset($_REQUEST['unconfirm']))
 									<thead>
 										<tr>
 										       <th>#</th>
-												<th>User Email</th>
-												<th>Title</th>
-                                                <th>Feedback</th>
-                                                <th>Attachment</th>
+												<th>Email</th>
+												<th>Name</th>
+                                                <th>Subject</th>
+                                                <th>Description</th>
 											    <th>Action</th>	
 										</tr>
 									</thead>
@@ -146,10 +146,11 @@ foreach($results as $result)
 {				?>	
 										<tr>
 											<td><?php echo htmlentities($cnt);?></td>
+                                            <td><?php echo htmlentities($result->email);?></td>
                                             <td><?php echo htmlentities($result->sender);?></td>
 											<td><?php echo htmlentities($result->title);?></td>
                                             <td><?php echo htmlentities($result->feedbackdata);?></td>
-                                            <td><a href="../attachment/<?php echo htmlentities($result->attachment);?>" ><?php echo htmlentities($result->attachment);?></a></td>
+                                            <!-- <td><a href="../attachment/<?php echo htmlentities($result->attachment);?>" ><?php echo htmlentities($result->attachment);?></a></td> -->
 											
 <td>
 <a href="sendreply.php?reply=<?php echo $result->sender;?>">&nbsp; <i class="fa fa-mail-reply"></i></a>&nbsp;&nbsp;

@@ -245,11 +245,13 @@ if (isset($_POST['comment-submit'])) {
                     سُبْحَانَ الَّذِيْ سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِيْنَ, وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُوْنَ, اللهُمَّ إِنَّا نَسْأَلُكَ فِيْ سَفَرِنَا هَذا البِرَّ وَالتَّقْوَى, وَمِنَ الْعَمَلِ مَا تَرْضَى, اللهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا, وَاطْوِ عَنَّا بُعْدَهُ, اللهُمَّ أنْتَ الصَّاحِبُ فِيْ السَّفَرِ وَالْخَلِيْفَةُ فَيْ الْأَهْلِ, اللهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ وَكَآبَةِ الْمَنْظَرِ
                     وَسُوْءِ الْمُنْقَلِبِ فِيْ الْمَالِ وَالْأَهْلِ
                     </p>
+                    <audio id="adhanplayer" src="https://cdn.aladhan.com/audio/adhans/a1.mp3" type="audio/mp3" controls="controls" class="adhanplayer"></audio>
                     <p>
                         Allāhu akbar Allāhu akbar Allāhu akbar.
                         Subḥāna-lladhī sakhkhara lanā hādhā wa mā kunnā lahu muqrinīn wa innā ilā Rabbinā la-munqalibūn. Allāhumma innā nas’aluka safarinā hādha-l-birra wa-t-taqwā, wa mina-l-‘amali mā tarḍā. Allāhumma hawwin ‘alaynā safaranā hādhā, wa-ṭwi ‘annā bu’dah. Allāhumma Anta-ṣ-Ṣāhibu fi-s-safari wa-l-Khalīfatu fi-l-ahl. Allāhumma innī a’ūdhu bika min wa’thā’i-s-safar, wa ka’ābati-l-manẓari wa sū’i-l-munqalabi fi-l-māli wa-l-ahl.
                     </p>
                 </blockquote>
+                
                     <p>
                         Glory be to Him Who has subjugated this to us, for we could not have accomplished it, and truly to our Lord we are returning. O Allah, we ask You for piety and fear of Allah and deeds with which You will be pleased on this journey of ours. O Allah make this journey easy for us and fold up for us its distance. O Allah You are the Companion on the journey and the Deputy among the family. O Allah I seek Your protection from discomfort on the journey and from a gloomy outlook, and from any evil befalling my wealth or family.
                     </p>
