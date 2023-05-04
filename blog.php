@@ -72,7 +72,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
       <a href="main.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Impact<span>.</span></h1>
+        <h1>Journeys of Faith.<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
@@ -169,7 +169,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
               <p class="post-category">Articles</p>
 
               <h2 class="title">
-                <a href="blog-details.php">Duas For Travelling</a>
+                <a href="blog-1.php">Duas For Travelling</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -195,7 +195,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
               <p class="post-category">Articles</p>
 
               <h2 class="title">
-                <a href="blog-details.php">Common Mistakes people do in Umrah and Hajj</a>
+                <a href="blog-2.php">Common Mistakes people do in Umrah and Hajj</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -215,13 +215,13 @@ $result = $query->fetch(PDO::FETCH_OBJ);
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                <img src="assets/img/blog/tip.jpg" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Entertainment</p>
+              <p class="post-category">Articles</p>
 
               <h2 class="title">
-                <a href="blog-details.php">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                <a href="blog-3.php">Tips for Hajj you need to know</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -241,13 +241,13 @@ $result = $query->fetch(PDO::FETCH_OBJ);
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
+                <center><img width="500" src="assets/img/blog/tt.jfif" alt="" class="img-fluid"></center>
               </div>
 
-              <p class="post-category">Sports</p>
+              <p class="post-category">Articles</p>
 
               <h2 class="title">
-                <a href="blog-details.php">Non rem rerum nam cum quo minus olor distincti</a>
+                <a href="blog-4.php">How to save money for Hajj</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -267,13 +267,13 @@ $result = $query->fetch(PDO::FETCH_OBJ);
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-5.jpg" alt="" class="img-fluid">
+               <center><img width="450" src="assets/img/blog/blog-5-v.jfif" alt="" class="img-fluid"></center>
               </div>
 
-              <p class="post-category">Politics</p>
+              <p class="post-category">articles</p>
 
               <h2 class="title">
-                <a href="blog-details.php">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
+                <a href="blog-5.php">How to stay safe during hajj</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -293,13 +293,13 @@ $result = $query->fetch(PDO::FETCH_OBJ);
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-6.jpg" alt="" class="img-fluid">
+                <center><img width="500" src="assets/img/blog/tel.jfif" alt="" class="img-fluid"></center>
               </div>
 
-              <p class="post-category">Entertainment</p>
+              <p class="post-category">articles</p>
 
               <h2 class="title">
-                <a href="blog-details.php">Distinctio provident quibusdam numquam aperiam aut</a>
+                <a href="blog-6.php">The Importance Of Performing Umrah</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -320,8 +320,6 @@ $result = $query->fetch(PDO::FETCH_OBJ);
         <div class="blog-pagination">
           <ul class="justify-content-center">
             <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
           </ul>
         </div><!-- End blog pagination -->
 
