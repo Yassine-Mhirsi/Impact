@@ -22,7 +22,7 @@ if (isset($_SESSION['alogin'])) {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Index</title>
+  <title>Journeys of Faith</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
