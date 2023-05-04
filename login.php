@@ -27,18 +27,23 @@ echo "<script type='text/javascript'> document.location = './main.php'; </script
 }
 
 }
-
+// signup php
 if(isset($_POST['signup-submit']))
 {
-// $file = $_FILES['image']['name'];
-// $file_loc = $_FILES['image']['tmp_name'];
-// $folder="images/"; 
-// $new_file_name = strtolower($file);
-// $final_file=str_replace(' ','-',$new_file_name);
+$file = $_FILES['image']['name'];
+$file_loc = $_FILES['image']['tmp_name'];
+$folder="images/"; 
+$new_file_name = strtolower($file);
+$final_file=str_replace(' ','-',$new_file_name);
 
 $name=$_POST['signup-name'];
 $email=$_POST['signup-email'];
 $password=$_POST['signup-password'];
+
+if(move_uploaded_file($file_loc,$folder.$final_file))
+	{
+		$image=$final_file;
+    }
 
 $notitype='Create Account';
 $reciver='Admin';
@@ -51,10 +56,11 @@ $querynoti-> bindParam(':notireciver',$reciver, PDO::PARAM_STR);
 $querynoti-> bindParam(':notitype', $notitype, PDO::PARAM_STR);
 $querynoti->execute();    
     
-$sql ="INSERT INTO users(name,email, password,status) VALUES(:name, :email, :password, 1)";
+$sql ="INSERT INTO users(name,email, password,image,status) VALUES(:name, :email, :password,:image, 1)";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':name', $name, PDO::PARAM_STR);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
+$query-> bindParam(':image', $image, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
 $query->execute();
 $lastInsertId = $dbh->lastInsertId();
@@ -85,7 +91,7 @@ $error="Something went wrong. Please try again";
 
 function validate()
       {
-          var extensions = new Array("jpg","jpeg");
+          var extensions = new Array("jpg","jpeg","png");
           var image_file = document.regform.image.value;
           var image_length = document.regform.image.value.length;
           var pos = image_file.lastIndexOf('.') + 1;
@@ -99,7 +105,7 @@ function validate()
               
               }
           }
-          alert("Image Extension Not Valid (Use Jpg,jpeg)");
+          alert("Image Extension Not Valid (Use Jpg,jpeg,Png)");
           return false;
       }
       
@@ -107,7 +113,7 @@ function validate()
 </head>
 <body>
   <a href="main.php" class="faith-button">Faith<span>.</span></a>
-  <div class="container" style="height: 55%;">
+  <div class="container" style="height: 80%;width:75%;">
     <input type="checkbox" id="flip">
     <div class="cover">
       <div class="front">
@@ -164,7 +170,10 @@ function validate()
                 <i class="fas fa-lock"></i>
                 <input type="password" placeholder="Enter your password" required name="signup-password">
               </div>
-              <input type="text" value="user" name="role" style="display:none;">
+              <div class="input-box">
+                <i class="fas fa-image"></i>
+                <input type="file" name="image" class="form-control">
+              </div>
               <div class="button input-box">
               <input type = "submit" value="Submit" name="signup-submit">
               </a>

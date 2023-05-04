@@ -14,7 +14,7 @@
         foreach ($comments as $comment) {
             echo '<div class="comment">';
             echo '<div class="d-flex">';
-            echo '<div class="comment-img"><img src="assets/img/blog/comments-6.jpg" alt=""></div>';
+            echo '<div class="comment-img"><img src="images/'.$result->image.'" alt=""></div>';
             echo '<div>';
             echo '<h5><a href="">' . $comment->user_name . '</a>  ';
             echo '<time datetime="2020-01-01">' . $comment->date . '</time>';

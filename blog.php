@@ -51,7 +51,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
 <body>
 
   <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar d-flex align-items-center">
+  <!-- <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
@@ -64,7 +64,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
-  </section><!-- End Top Bar -->
+  </section> -->
 
   <header id="header" class="header d-flex align-items-center">
 
@@ -102,7 +102,8 @@ $result = $query->fetch(PDO::FETCH_OBJ);
           <?php if (isset($_SESSION['alogin'])) { ?>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="bi bi-person" style="font-size: 2em;"></i>
+                <!-- <i class="bi bi-person" style="font-size: 2em;"></i> -->
+                <img style="height:40px;width:40px;"src="images/<?php echo htmlentities($result->image);?>">
               </a>
               <ul class="dropdown-menu">
                 <li><a href="profile.php"><?php echo htmlentities($result->name);?></a></li>
