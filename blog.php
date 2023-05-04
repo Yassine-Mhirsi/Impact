@@ -69,10 +69,10 @@ $result = $query->fetch(PDO::FETCH_OBJ);
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="main.php" class="logo d-flex align-items-center">
+    <a href="main.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Impact<span>.</span></h1>
+        <h1>Journeys of Faith<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
