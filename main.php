@@ -10,8 +10,23 @@ if (isset($_SESSION['alogin'])) {
   $query->execute();
   $result = $query->fetch(PDO::FETCH_OBJ);
 
-  //test bokri
 
+  // prayer times
+  $year = date('Y');
+  $month = date('m');
+  $city = 'Tunis';
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, "http://api.aladhan.com/v1/calendarByCity/$year/$month?city=$city&country=Tunisia");
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  $response = curl_exec($ch);
+  curl_close($ch);
+  $data = json_decode($response);
+  $fajr = $data->data[0]->timings->Fajr;
+  $sunrise = $data->data[0]->timings->Sunrise;
+  $dhuhr = $data->data[0]->timings->Dhuhr;
+  $asr = $data->data[0]->timings->Asr;
+  $maghrib = $data->data[0]->timings->Maghrib;
+  $isha = $data->data[0]->timings->Isha;
 }
 ?>
 
@@ -110,14 +125,45 @@ if (isset($_SESSION['alogin'])) {
           <li class="dropdown"><a href="#"><span>Features</span><i
                 class="bi bi-chevro  n-down dropdown-indicator bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li class="dropdown"><a href=""><span>Drop down</span> <i
+              <li class="dropdown"><a href=""><span>Prayer Times</span> <i
                     class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <?php
+                  // prayer times
+                  $year = date('Y');
+                  $month = date('m');
+                  $city = 'Tunis';
+                  $ch = curl_init();
+                  curl_setopt($ch, CURLOPT_URL, "http://api.aladhan.com/v1/calendarByCity/$year/$month?city=$city&country=Tunisia");
+                  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                  $response = curl_exec($ch);
+                  curl_close($ch);
+                  $data = json_decode($response);
+                  $fajr = $data->data[0]->timings->Fajr;
+                  $sunrise = $data->data[0]->timings->Sunrise;
+                  $dhuhr = $data->data[0]->timings->Dhuhr;
+                  $asr = $data->data[0]->timings->Asr;
+                  $maghrib = $data->data[0]->timings->Maghrib;
+                  $isha = $data->data[0]->timings->Isha;
+                  ?>
+                  <li><a href="#">
+                      <?php echo "Fajr: $fajr" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Sunrise: $sunrise" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Dhuhr: $dhuhr" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Asr: $asr" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Maghrib: $maghrib" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Isha: $isha" ?>
+                    </a></li>
                 </ul>
               </li>
               <li><a href="#">Drop Down 2</a></li>
@@ -1089,7 +1135,7 @@ if (isset($_SESSION['alogin'])) {
             <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
             <form action="main-feedback.php" method="post" class="php-email-form">
               <?php if (isset($_SESSION['alogin'])) { ?>
-              <!-- <div class="row">
+                <!-- <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="feedback-name" class="form-control" id="name" placeholder="Your Name"
                     required>
@@ -1101,15 +1147,16 @@ if (isset($_SESSION['alogin'])) {
               </div> -->
               <?php } else { ?>
                 <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="feedback-name" class="form-control" id="name" placeholder="Your Name"
-                    required>
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="feedback-name" class="form-control" id="name" placeholder="Your Name"
+                      required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="feedback-email" id="email" placeholder="Your Email"
+                      required>
+                  </div>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="feedback-email" id="email" placeholder="Your Email"
-                    required>
-                </div>
-              </div> <?php } ?>
+              <?php } ?>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="feedback-subject" id="subject" placeholder="Subject"
                   required>
