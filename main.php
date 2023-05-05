@@ -27,7 +27,7 @@ if (isset($_SESSION['alogin'])) {
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link  href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -256,8 +256,7 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>About Us</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis
-            omnis tiledo stran delop</p>
+          <p>Welcome to our website for Hajj and Umrah, where we strive to provide a comprehensive platform to help pilgrims embark on their journey of a lifetime. Our mission is to make the experience of Hajj and Umrah as easy and accessible as possible, by providing reliable information, and excellent customer support.</p>
         </div>
 
         <div class="row gy-4">
@@ -771,8 +770,6 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>Our Team</h2>
-          <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem
-            dolore earum</p>
         </div>
 
         <div class="row gy-4">
@@ -958,23 +955,20 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>Recent Blog Posts</h2>
-          <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto
-            accusamus fugit aut qui distinctio</p>
         </div>
-
         <div class="row gy-4">
 
           <div class="col-xl-4 col-md-6">
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                <img src="assets/img/travelling.jpg" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Politics</p>
+              <p class="post-category">articles</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                <a href="blog-1.html">Duas For Travelling</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -994,17 +988,17 @@ if (isset($_SESSION['alogin'])) {
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+                <img src="assets/img/mistakes.jpg" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Sports</p>
+              <p class="post-category">articles</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href="blog-2.php">Common Mistakes people do in Umrah and Hajj</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
                   <p class="post-author">Allisa Mayer</p>
                   <p class="post-date">
@@ -1020,13 +1014,13 @@ if (isset($_SESSION['alogin'])) {
             <article>
 
               <div class="post-img">
-                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                <img src="assets/img/blog/tip.jpg" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Entertainment</p>
+              <p class="post-category">articles</p>
 
               <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                <a href="blog-3.php">Tips for Hajj you need to know</a>
               </h2>
 
               <div class="d-flex align-items-center">
