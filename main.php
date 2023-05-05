@@ -295,16 +295,13 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="row gy-4">
           <div class="col-lg-6">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia
-              recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel.
-              Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore
-              doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+            <center><h3>More informations</h3></center>
+            <img src="assets/img/abb.jpeg" class="img-fluid rounded-4 mb-4" alt="">
+            <p>We understand that Hajj and Umrah are sacred journeys that require careful planning and preparation. That's why we have created a user-friendly website that is both informative and easy to navigate. Our website features a wealth of resources, including detailed guides on the rituals of Hajj and Umrah, travel tips, and advice on how to prepare for your journey.</p>
+            <p>we have a dedicated customer support team to assist you with any questions or concerns you may have .</p>
           </div>
           <div class="col-lg-6">
-            <div class="content ps-0 ps-lg-5">
+            <div class="content ps-0 ps-lg-5">  
               <p class="fst-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
