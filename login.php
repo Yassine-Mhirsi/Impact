@@ -30,20 +30,24 @@ echo "<script type='text/javascript'> document.location = './main.php'; </script
 // signup php
 if(isset($_POST['signup-submit']))
 {
+  
 $file = $_FILES['image']['name'];
 $file_loc = $_FILES['image']['tmp_name'];
 $folder="images/"; 
 $new_file_name = strtolower($file);
 $final_file=str_replace(' ','-',$new_file_name);
 
-$name=$_POST['signup-name'];
-$email=$_POST['signup-email'];
-$password=$_POST['signup-password'];
 
 if(move_uploaded_file($file_loc,$folder.$final_file))
 	{
 		$image=$final_file;
-    }
+}
+
+
+$name=$_POST['signup-name'];
+$email=$_POST['signup-email'];
+$password=$_POST['signup-password'];
+    
 
 $notitype='Create Account';
 $reciver='Admin';

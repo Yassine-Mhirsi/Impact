@@ -71,7 +71,9 @@ if (isset($_SESSION['alogin'])) {
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
+
 <!-- hello -->
 
 <body>
@@ -281,6 +283,18 @@ if (isset($_SESSION['alogin'])) {
     </div> -->
   </section>
   <!-- End Hero Section -->
+
+  <button id="chatbot-button" onclick="openChatbot()">Open Chatbot</button>
+  <script>
+    function openChatbot() {
+      var iframe = document.createElement("iframe");
+      iframe.id="chatbot";
+      iframe.src = "https://ora.ai/worldwide-magenta-lr3x/hajj-and-umrah";
+      iframe.style = "border:0; border-radius: 4px; height:600px; width:400px;";
+      document.body.appendChild(iframe);
+      iframe.style.display = "block";
+    }
+  </script>
 
   <main id="main">
 
