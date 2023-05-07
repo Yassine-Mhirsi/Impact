@@ -346,11 +346,7 @@ if (isset($_SESSION['alogin'])) {
       </div>
     </section><!-- End About Us Section -->
 
-    <!-- ======= Clients Section ======= -->
    
-
-     
-    </section><!-- End Clients Section -->
 
     <!-- ======= Stats Counter Section ======= -->
     <section id="stats-counter" class="stats-counter">
@@ -392,7 +388,7 @@ if (isset($_SESSION['alogin'])) {
     <!-- ======= Call To Action Section ======= -->
     <section id="call-to-action" class="call-to-action">
       <div class="container text-center" data-aos="zoom-out">
-        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+        <a href="assets/vid/haj.mp4 " class="glightbox play-btn"></a>
         <h3>Call To Action</h3>
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -415,12 +411,11 @@ if (isset($_SESSION['alogin'])) {
           <div class="col-lg-4 col-md-6">
             <div class="service-item  position-relative">
               <div class="icon">
-                <i class="bi bi-activity"></i>
+                <i class="bi bi-geo-alt"></i>
               </div>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-                tempore et consequatur.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Qibla finder</h3>
+              <p>Tired of searching were the Qibla is ?</p>
+              <p>In our features section wwe provide a Qibla finder for you, go check it.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -429,46 +424,32 @@ if (isset($_SESSION['alogin'])) {
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-                nesciunt dolorem.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>chat-bot</h3>
+              <p>Our chat-bot will help find your answers</p>
+              
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-easel"></i>
+                <i class="bi bi-calculator"></i>
               </div>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                eos earum corrupti.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Zaket calculator</h3>
+              <p>Tired of searching for a zaket calculator ?</p>
+              <p>in our website we already provide that feature for you.</p>
+              <p>you can check it in the features section.</p>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <h3>Asperiores Commodit</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-                adipisci neque.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-calendar4-week"></i>
               </div>
-              <h3>Velit Doloremque</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
-                alias eius labore.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Prayer time</h3>
+              <p>We provide the time of the prayers for you in the features section.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -477,10 +458,8 @@ if (isset($_SESSION['alogin'])) {
               <div class="icon">
                 <i class="bi bi-chat-square-text"></i>
               </div>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
-                recusandae ducimus enim.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <h3>Testimonials</h3>
+              <p>Find what other persons think about their experience.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -1105,7 +1084,7 @@ if (isset($_SESSION['alogin'])) {
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
                   <h4>Call:</h4>
-                  <p>+966  02-6341943</p>
+                  <p>+216 55 335 645</p>
                 </div>
               </div><!-- End Info Item -->
 
