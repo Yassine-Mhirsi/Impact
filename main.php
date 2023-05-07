@@ -171,7 +171,7 @@ if (isset($_SESSION['alogin'])) {
                 </ul>
               </li>
               <li><a href="qibla.php">Qibla Finder</a></li>
-              <li><a href="zakat.php">Zakat Calculator</a></li>
+              <li><a href="zakat/index.php">Zakat Calculator</a></li>
               <li><a href="donate.php">Donate</a></li>
             </ul>
           </li>
