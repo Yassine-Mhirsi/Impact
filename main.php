@@ -1110,8 +1110,7 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>Contact</h2>
-          <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem
-            dolore earum</p>
+          <p>"We're here to help! If you have any questions or concerns, please don't hesitate to reach out to us."</p>
         </div>
 
         <div class="row gx-lg-0 gy-4">
@@ -1123,7 +1122,7 @@ if (isset($_SESSION['alogin'])) {
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Old Makkah Road, Jeddah, 33247</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1131,7 +1130,7 @@ if (isset($_SESSION['alogin'])) {
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>journeys.of.faith@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1139,7 +1138,7 @@ if (isset($_SESSION['alogin'])) {
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55</p>
+                  <p>+966  02-6341943</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1246,11 +1245,11 @@ if (isset($_SESSION['alogin'])) {
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
+          Old Makkah Road<br>
+          Jeddah, 33247<br>
+          Saudi Arabia <br><br>
+            <strong>Phone:</strong>+966 02-6341943<br>
+            <strong>Email:</strong>journeys.of.faith@gmail.com<br>
           </p>
 
         </div>
