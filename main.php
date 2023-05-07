@@ -438,8 +438,7 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>Our Services</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis
-            omnis tiledo stran delop</p>
+          <p>Welcome to our services section, where we're dedicated to providing a wide range of services to make your pilgrimage to Hajj and Umrah as smooth and comfortable as possible.</p>
         </div>
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
@@ -667,8 +666,7 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>Portfolio</h2>
-          <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia
-            reprehenderit sunt deleniti</p>
+          <p>Welcome to our portfolio! Here, you'll find a glimpse into our services and experiences that we've offered to pilgrims embarking on their journey of a lifetime.</p>
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
