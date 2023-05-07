@@ -1,0 +1,149 @@
+/*===========================
+     CHAT BOOT MESSENGER
+   ===========================*/
+
+
+.chat_on_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat_on_icon i {
+    display: block;
+}
+
+.chat_close_icon {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: 12px;
+    z-index: 9;
+}
+
+.chat_on {
+    position: fixed;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    left: 15px;
+    bottom: 20px;
+    background-color: #f85a40;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 9px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+    cursor: pointer;
+    display: block;
+}
+
+.chat_on_icon {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+#Smallchat .Layout {
+    pointer-events: auto;
+    box-sizing: content-box !important;
+    z-index: 999999999;
+    position: fixed;
+    bottom: 20px;
+    min-width: 50px;
+    max-width: 300px;
+    max-height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    border-radius: 50px;
+    box-shadow: 5px 0 20px 5px rgba(0, 0, 0, .1);
+    -webkit-animation: appear .15s cubic-bezier(.25, .25, .5, 1.1);
+    animation: appear .15s cubic-bezier(.25, .25, .5, 1.1);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    -webkit-transition: right .1s cubic-bezier(.25, .25, .5, 1), bottom .1s cubic-bezier(.25, .25, .5, 1), min-width .2s cubic-bezier(.25, .25, .5, 1), max-width .2s cubic-bezier(.25, .25, .5, 1), min-height .2s cubic-bezier(.25, .25, .5, 1), max-height .2s cubic-bezier(.25, .25, .5, 1), border-radius 50ms cubic-bezier(.25, .25, .5, 1) .15s, background-color 50ms cubic-bezier(.25, .25, .5, 1) .15s, color 50ms cubic-bezier(.25, .25, .5, 1) .15s;
+    transition: right .1s cubic-bezier(.25, .25, .5, 1), bottom .1s cubic-bezier(.25, .25, .5, 1), min-width .2s cubic-bezier(.25, .25, .5, 1), max-width .2s cubic-bezier(.25, .25, .5, 1), min-height .2s cubic-bezier(.25, .25, .5, 1), max-height .2s cubic-bezier(.25, .25, .5, 1), border-radius 50ms cubic-bezier(.25, .25, .5, 1) .15s, background-color 50ms cubic-bezier(.25, .25, .5, 1) .15s, color 50ms cubic-bezier(.25, .25, .5, 1) .15s
+}
+
+#Smallchat .Layout {
+    left: 70px;
+    bottom: 55px;
+}
+
+#Smallchat .Layout-open {
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 300px;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+    color: #fff;
+    -webkit-transition: right .1s cubic-bezier(.25, .25, .5, 1), bottom .1s cubic-bezier(.25, .25, .5, 1.1), min-width .2s cubic-bezier(.25, .25, .5, 1.1), max-width .2s cubic-bezier(.25, .25, .5, 1.1), max-height .2s cubic-bezier(.25, .25, .5, 1.1), min-height .2s cubic-bezier(.25, .25, .5, 1.1), border-radius 0ms cubic-bezier(.25, .25, .5, 1.1), background-color 0ms cubic-bezier(.25, .25, .5, 1.1), color 0ms cubic-bezier(.25, .25, .5, 1.1);
+    transition: right .1s cubic-bezier(.25, .25, .5, 1), bottom .1s cubic-bezier(.25, .25, .5, 1.1), min-width .2s cubic-bezier(.25, .25, .5, 1.1), max-width .2s cubic-bezier(.25, .25, .5, 1.1), max-height .2s cubic-bezier(.25, .25, .5, 1.1), min-height .2s cubic-bezier(.25, .25, .5, 1.1), border-radius 0ms cubic-bezier(.25, .25, .5, 1.1), background-color 0ms cubic-bezier(.25, .25, .5, 1.1), color 0ms cubic-bezier(.25, .25, .5, 1.1);
+}
+
+#Smallchat .Layout-expand {
+    height: 500px;
+    min-height: 500px;
+    display: none;
+}
+
+#Smallchat .Layout-mobile {
+    bottom: 10px
+}
+
+#Smallchat .Layout-mobile.Layout-open {
+    width: calc(100% - 20px);
+    min-width: calc(100% - 20px)
+}
+
+#Smallchat .Layout-mobile.Layout-expand {
+    bottom: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    border-radius: 0 !important
+}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}

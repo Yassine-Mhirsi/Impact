@@ -43,7 +43,7 @@ if (isset($_SESSION['alogin'])) {
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link  href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -72,13 +72,15 @@ if (isset($_SESSION['alogin'])) {
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-</head>
+  <!-- CHATBOT -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="assets/css/chatbot.css">
 
+</head>
 <!-- hello -->
 
 <body>
-
-  <script>
+  <!-- <script>
     window.intercomSettings = {
       api_base: "https://api-iam.intercom.io",
       app_id: "rn3v2onm",
@@ -90,7 +92,7 @@ if (isset($_SESSION['alogin'])) {
   <script>
     // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/rn3v2onm'
     (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/rn3v2onm'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (document.readyState === 'complete') { l(); } else if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();
-  </script>
+  </script> -->
 
   <!-- ======= Header ======= -->
   <!-- <section id="topbar" class="topbar d-flex align-items-center">
@@ -284,19 +286,26 @@ if (isset($_SESSION['alogin'])) {
   </section>
   <!-- End Hero Section -->
 
-  <button id="chatbot-button" onclick="openChatbot()">Open Chatbot</button>
-  <script>
-    function openChatbot() {
-      var iframe = document.createElement("iframe");
-      iframe.id="chatbot";
-      iframe.src = "https://ora.ai/worldwide-magenta-lr3x/hajj-and-umrah";
-      iframe.style = "border:0; border-radius: 4px; height:600px; width:400px;";
-      document.body.appendChild(iframe);
-      iframe.style.display = "block";
-    }
-  </script>
-
   <main id="main">
+    <div class="row">
+      <div id="Smallchat">
+        <div class="Layout Layout-open Layout-expand Layout-left" style="">
+          <iframe src="https://ora.ai/embed/9b6d9615-079e-49e2-9ad5-e4315711ba8b" width="100%" height="100%"
+            style="border:0; border-radius: 4px"></iframe>
+        </div>
+        <div class="chat_on">
+          <span class="chat_on_icon"><i class="bi bi-robot"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".chat_on").click(function () {
+          $(".Layout").toggle();
+        });
+      });
+    </script>
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -304,18 +313,25 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>About Us</h2>
-          <p>Welcome to our website for Hajj and Umrah, where we strive to provide a comprehensive platform to help pilgrims embark on their journey of a lifetime. Our mission is to make the experience of Hajj and Umrah as easy and accessible as possible, by providing reliable information, and excellent customer support.</p>
+          <p>Welcome to our website for Hajj and Umrah, where we strive to provide a comprehensive platform to help
+            pilgrims embark on their journey of a lifetime. Our mission is to make the experience of Hajj and Umrah as
+            easy and accessible as possible, by providing reliable information, and excellent customer support.</p>
         </div>
 
         <div class="row gy-4">
           <div class="col-lg-6">
-            <center><h3>More informations</h3></center>
+            <center>
+              <h3>More informations</h3>
+            </center>
             <img src="assets/img/abb.jpeg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>We understand that Hajj and Umrah are sacred journeys that require careful planning and preparation. That's why we have created a user-friendly website that is both informative and easy to navigate. Our website features a wealth of resources, including detailed guides on the rituals of Hajj and Umrah, travel tips, and advice on how to prepare for your journey.</p>
+            <p>We understand that Hajj and Umrah are sacred journeys that require careful planning and preparation.
+              That's why we have created a user-friendly website that is both informative and easy to navigate. Our
+              website features a wealth of resources, including detailed guides on the rituals of Hajj and Umrah, travel
+              tips, and advice on how to prepare for your journey.</p>
             <p>we have a dedicated customer support team to assist you with any questions or concerns you may have .</p>
           </div>
           <div class="col-lg-6">
-            <div class="content ps-0 ps-lg-5">  
+            <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
@@ -1273,6 +1289,7 @@ if (isset($_SESSION['alogin'])) {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 
 </body>
 
