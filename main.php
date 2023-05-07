@@ -907,8 +907,7 @@ if (isset($_SESSION['alogin'])) {
             <div class="content px-xl-5">
               <h3>Frequently Asked <strong>Questions</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              Here are some of the most common questions asked about Hajj along with their answers
               </p>
             </div>
           </div>
@@ -922,14 +921,12 @@ if (isset($_SESSION['alogin'])) {
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq-content-1">
                     <span class="num">1.</span>
-                    Non consectetur a erat nam at lectus urna duis?
+                    What is Hajj?
                   </button>
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                  </div>
+                  Hajj is an annual pilgrimage to Mecca, Saudi Arabia that is one of the five pillars of Islam.
                 </div>
               </div><!-- # Faq item-->
 
@@ -938,14 +935,12 @@ if (isset($_SESSION['alogin'])) {
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq-content-2">
                     <span class="num">2.</span>
-                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                    Who is required to perform Hajj?
                   </button>
                 </h3>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
-                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  All physically and financially able Muslims who have reached the age of puberty are required to perform Hajj at least once in their lifetime.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -955,15 +950,12 @@ if (isset($_SESSION['alogin'])) {
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq-content-3">
                     <span class="num">3.</span>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                    How long does Hajj take?
                   </button>
                 </h3>
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
-                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
-                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
-                    sed odio morbi quis
+                  The Hajj pilgrimage lasts for five days, starting on the 8th day of the Islamic month of Dhul-Hijjah and ending on the 12th day.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -973,14 +965,12 @@ if (isset($_SESSION['alogin'])) {
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq-content-4">
                     <span class="num">4.</span>
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                    What is the significance of Hajj?
                   </button>
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
-                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  Hajj is a demonstration of solidarity and submission to Allah. It also serves as a reminder of the Day of Judgment and the unity of the Muslim Ummah.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -990,14 +980,26 @@ if (isset($_SESSION['alogin'])) {
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#faq-content-5">
                     <span class="num">5.</span>
-                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                    What should I bring for Hajj?
                   </button>
                 </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
-                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
-                    Purus gravida quis blandit turpis cursus in
+                  Pilgrims should bring comfortable clothing, personal hygiene items, and appropriate footwear. They should also bring a valid passport, visa, and necessary medications.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-6">
+                    <span class="num">6.</span>
+                    What is the cost of Hajj?
+                  </button>
+                </h3>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                  The cost of Hajj varies depending on the country of origin and the package chosen by the pilgrim. It can range from a few thousand to tens of thousands of dollars.
                   </div>
                 </div>
               </div><!-- # Faq item-->
