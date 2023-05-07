@@ -170,8 +170,8 @@ if (isset($_SESSION['alogin'])) {
                     </a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="qibla.php">Qibla Finder</a></li>
+              <li><a href="zakat.php">Zakat Calculator</a></li>
               <li><a href="donate.php">Donate</a></li>
             </ul>
           </li>
