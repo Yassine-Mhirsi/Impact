@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +45,8 @@
   <section id="topbar" class="topbar d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a
+            href="mailto:contact@example.com">contact@example.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
@@ -71,10 +74,12 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
@@ -108,7 +113,9 @@
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
               <h2>Portfolio Details</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut
+                a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum
+                dolorem.</p>
             </div>
           </div>
         </div>
@@ -144,13 +151,13 @@
               </div>
 
               <div class="container-fluid">
-        <div class="map-responsive">
-            <?php $place='Swissôtel+Al+Maqam+Makkah'; ?> 
-            <iframe
-                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=<?=$place;?>"
-                width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-    </div>
+                <div class="map-responsive">
+                  <?php $place = 'Swissôtel+Al+Maqam+Makkah'; ?>
+                  <iframe
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=<?= $place; ?>"
+                    width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
 
             </div>
             <div class="swiper-pagination"></div>
@@ -165,12 +172,21 @@
           <div class="col-lg-8">
             <div class="portfolio-description">
               <h2>This is an example of portfolio detail</h2>
-              <p>Swissotel Makkah is not only the first Swissotel to be opened in Saudi Arabia, but is also the first to commence in the entire Middle East. As part of the prestigious Abraj Al Bait complex, the deluxe Swissotel Makkah is a contemporary five-star hotel located in close proximity to the holy Masjid Al Haraam, overlooking the Ka’aba, as well as the entire Masjid. The Swissotel Makkah offers 1,487 elegant rooms and suites with modern contemporary design that complements the rich, hospitable values of Arab culture. The hotel includes two restaurants, one meeting room, and one business centre. With private entrances that make it easier for pilgrims to reach the Masjid Al Haram, Swissotel is also the only Makkah hotel with a direct entrance through Ajyad Street.</p>
+              <p>Swissotel Makkah is not only the first Swissotel to be opened in Saudi Arabia, but is also the first to
+                commence in the entire Middle East. As part of the prestigious Abraj Al Bait complex, the deluxe
+                Swissotel Makkah is a contemporary five-star hotel located in close proximity to the holy Masjid Al
+                Haraam, overlooking the Ka’aba, as well as the entire Masjid. The Swissotel Makkah offers 1,487 elegant
+                rooms and suites with modern contemporary design that complements the rich, hospitable values of Arab
+                culture. The hotel includes two restaurants, one meeting room, and one business centre. With private
+                entrances that make it easier for pilgrims to reach the Masjid Al Haram, Swissotel is also the only
+                Makkah hotel with a direct entrance through Ajyad Street.</p>
 
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  Our stay at Swiss Hotel was amazing. Less than 1 min walk to Masjid Al Haram. Great room & facilities, luxurious decor, washroom was clean, brilliant staff at reception. housekeeping staff Sualleh Saeed service was amazing. No complaints at all. Will stay here again and again in future...
+                  Our stay at Swiss Hotel was amazing. Less than 1 min walk to Masjid Al Haram. Great room & facilities,
+                  luxurious decor, washroom was clean, brilliant staff at reception. housekeeping staff Sualleh Saeed
+                  service was amazing. No complaints at all. Will stay here again and again in future...
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <div>
@@ -213,7 +229,8 @@
           <a href="main.html" class="logo d-flex align-items-center">
             <span>Impact</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -275,7 +292,8 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
