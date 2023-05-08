@@ -61,10 +61,10 @@
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="main.html" class="logo d-flex align-items-center">
+      <a href="main.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Impact<span>.</span></h1>
+        <h1>Journeys of Faith<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
@@ -226,8 +226,8 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="main.html" class="logo d-flex align-items-center">
-            <span>Impact</span>
+          <a href="main.php" class="logo d-flex align-items-center">
+            <span>Journeys of Faith</span>
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
             donna mare fermentum iaculis eu non diam phasellus.</p>
