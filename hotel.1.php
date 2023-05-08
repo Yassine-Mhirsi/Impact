@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Portfolio Details</title>
+  <title>Journeys of Faith.</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -143,9 +143,14 @@
                 <img src="assets/img/hall.jpg" alt="">
               </div>
 
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/books-1.jpg" alt="">
-              </div>
+              <div class="container-fluid">
+        <div class="map-responsive">
+            <?php $place='Swissôtel+Al+Maqam+Makkah'; ?> 
+            <iframe
+                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=<?=$place;?>"
+                width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
 
             </div>
             <div class="swiper-pagination"></div>
@@ -160,17 +165,12 @@
           <div class="col-lg-8">
             <div class="portfolio-description">
               <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-              <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
-              </p>
+              <p>Swissotel Makkah is not only the first Swissotel to be opened in Saudi Arabia, but is also the first to commence in the entire Middle East. As part of the prestigious Abraj Al Bait complex, the deluxe Swissotel Makkah is a contemporary five-star hotel located in close proximity to the holy Masjid Al Haraam, overlooking the Ka’aba, as well as the entire Masjid. The Swissotel Makkah offers 1,487 elegant rooms and suites with modern contemporary design that complements the rich, hospitable values of Arab culture. The hotel includes two restaurants, one meeting room, and one business centre. With private entrances that make it easier for pilgrims to reach the Masjid Al Haram, Swissotel is also the only Makkah hotel with a direct entrance through Ajyad Street.</p>
 
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  Our stay at Swiss Hotel was amazing. Less than 1 min walk to Masjid Al Haram. Great room & facilities, luxurious decor, washroom was clean, brilliant staff at reception. housekeeping staff Sualleh Saeed service was amazing. No complaints at all. Will stay here again and again in future...
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <div>
@@ -180,12 +180,6 @@
                 </div>
               </div>
 
-              <p>
-                Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
-
-              <p>
-                Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
-              </p>
 
             </div>
           </div>
