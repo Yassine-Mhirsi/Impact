@@ -14,7 +14,7 @@ if (isset($_SESSION['alogin'])) {
   // prayer times
   $year = date('Y');
   $month = date('m');
-  $city = 'Tunis';
+  $city = 'Ariana';
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, "http://api.aladhan.com/v1/calendarByCity/$year/$month?city=$city&country=Tunisia");
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -43,8 +43,8 @@ if (isset($_SESSION['alogin'])) {
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="http://muslimmate.islam-db.com/dist/img/mosque.png" rel="icon">
+  <link href="http://muslimmate.islam-db.com/dist/img/mosque.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -172,6 +172,7 @@ if (isset($_SESSION['alogin'])) {
               </li>
               <li><a href="qibla.php">Qibla Finder</a></li>
               <li><a href="zakat/index.php">Zakat Calculator</a></li>
+              <li><a href="calender.php">Calender</a></li>
               <li><a href="donate.php">Donate</a></li>
             </ul>
           </li>
@@ -333,7 +334,10 @@ if (isset($_SESSION['alogin'])) {
           <div class="col-lg-6">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-              At our website for Hajj and Umrah, we are committed to ensuring that every pilgrim has a memorable and fulfilling experience. We believe that the journey to the holy cities of Makkah and Madinah is a life-changing experience that should be accessible to everyone, regardless of their background or circumstances.
+                At our website for Hajj and Umrah, we are committed to ensuring that every pilgrim has a memorable and
+                fulfilling experience. We believe that the journey to the holy cities of Makkah and Madinah is a
+                life-changing experience that should be accessible to everyone, regardless of their background or
+                circumstances.
               </p>
               <div class="position-relative mt-4">
                 <img src="assets/img/inf.jfif" class="img-fluid rounded-4" alt="">
@@ -346,7 +350,7 @@ if (isset($_SESSION['alogin'])) {
       </div>
     </section><!-- End About Us Section -->
 
-   
+
 
     <!-- ======= Stats Counter Section ======= -->
     <section id="stats-counter" class="stats-counter">
@@ -403,7 +407,8 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>Our Services</h2>
-          <p>Welcome to our services section, where we're dedicated to providing a wide range of services to make your pilgrimage to Hajj and Umrah as smooth and comfortable as possible.</p>
+          <p>Welcome to our services section, where we're dedicated to providing a wide range of services to make your
+            pilgrimage to Hajj and Umrah as smooth and comfortable as possible.</p>
         </div>
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
@@ -426,7 +431,7 @@ if (isset($_SESSION['alogin'])) {
               </div>
               <h3>chat-bot</h3>
               <p>Our chat-bot will help find your answers</p>
-              
+
             </div>
           </div><!-- End Service Item -->
 
@@ -614,7 +619,8 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>Portfolio</h2>
-          <p>Welcome to our portfolio! Here, you'll find a glimpse into our services and experiences that we've offered to pilgrims embarking on their journey of a lifetime.</p>
+          <p>Welcome to our portfolio! Here, you'll find a glimpse into our services and experiences that we've offered
+            to pilgrims embarking on their journey of a lifetime.</p>
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
@@ -853,7 +859,7 @@ if (isset($_SESSION['alogin'])) {
             <div class="content px-xl-5">
               <h3>Frequently Asked <strong>Questions</strong></h3>
               <p>
-              Here are some of the most common questions asked about Hajj along with their answers
+                Here are some of the most common questions asked about Hajj along with their answers
               </p>
             </div>
           </div>
@@ -872,90 +878,95 @@ if (isset($_SESSION['alogin'])) {
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                   <div class="accordion-body">
-                  Hajj is an annual pilgrimage to Mecca, Saudi Arabia that is one of the five pillars of Islam.
-                </div>
-              </div><!-- # Faq item-->
+                    Hajj is an annual pilgrimage to Mecca, Saudi Arabia that is one of the five pillars of Islam.
+                  </div>
+                </div><!-- # Faq item-->
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-2">
-                    <span class="num">2.</span>
-                    Who is required to perform Hajj?
-                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  All physically and financially able Muslims who have reached the age of puberty are required to perform Hajj at least once in their lifetime.
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-2">
+                      <span class="num">2.</span>
+                      Who is required to perform Hajj?
+                    </button>
+                  </h3>
+                  <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      All physically and financially able Muslims who have reached the age of puberty are required to
+                      perform Hajj at least once in their lifetime.
+                    </div>
                   </div>
-                </div>
-              </div><!-- # Faq item-->
+                </div><!-- # Faq item-->
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-3">
-                    <span class="num">3.</span>
-                    How long does Hajj take?
-                  </button>
-                </h3>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  The Hajj pilgrimage lasts for five days, starting on the 8th day of the Islamic month of Dhul-Hijjah and ending on the 12th day.
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-3">
+                      <span class="num">3.</span>
+                      How long does Hajj take?
+                    </button>
+                  </h3>
+                  <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      The Hajj pilgrimage lasts for five days, starting on the 8th day of the Islamic month of
+                      Dhul-Hijjah and ending on the 12th day.
+                    </div>
                   </div>
-                </div>
-              </div><!-- # Faq item-->
+                </div><!-- # Faq item-->
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-4">
-                    <span class="num">4.</span>
-                    What is the significance of Hajj?
-                  </button>
-                </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  Hajj is a demonstration of solidarity and submission to Allah. It also serves as a reminder of the Day of Judgment and the unity of the Muslim Ummah.
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-4">
+                      <span class="num">4.</span>
+                      What is the significance of Hajj?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      Hajj is a demonstration of solidarity and submission to Allah. It also serves as a reminder of the
+                      Day of Judgment and the unity of the Muslim Ummah.
+                    </div>
                   </div>
-                </div>
-              </div><!-- # Faq item-->
+                </div><!-- # Faq item-->
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-5">
-                    <span class="num">5.</span>
-                    What should I bring for Hajj?
-                  </button>
-                </h3>
-                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  Pilgrims should bring comfortable clothing, personal hygiene items, and appropriate footwear. They should also bring a valid passport, visa, and necessary medications.
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-5">
+                      <span class="num">5.</span>
+                      What should I bring for Hajj?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      Pilgrims should bring comfortable clothing, personal hygiene items, and appropriate footwear. They
+                      should also bring a valid passport, visa, and necessary medications.
+                    </div>
                   </div>
-                </div>
-              </div><!-- # Faq item-->
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-6">
-                    <span class="num">6.</span>
-                    What is the cost of Hajj?
-                  </button>
-                </h3>
-                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  The cost of Hajj varies depending on the country of origin and the package chosen by the pilgrim. It can range from a few thousand to tens of thousands of dollars.
+                </div><!-- # Faq item-->
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-6">
+                      <span class="num">6.</span>
+                      What is the cost of Hajj?
+                    </button>
+                  </h3>
+                  <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      The cost of Hajj varies depending on the country of origin and the package chosen by the pilgrim.
+                      It can range from a few thousand to tens of thousands of dollars.
+                    </div>
                   </div>
-                </div>
-              </div><!-- # Faq item-->
+                </div><!-- # Faq item-->
+
+              </div>
 
             </div>
-
           </div>
-        </div>
 
-      </div>
+        </div>
     </section><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
@@ -1191,9 +1202,9 @@ if (isset($_SESSION['alogin'])) {
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-          Old Makkah Road<br>
-          Jeddah, 33247<br>
-          Saudi Arabia <br><br>
+            Old Makkah Road<br>
+            Jeddah, 33247<br>
+            Saudi Arabia <br><br>
             <strong>Phone:</strong>+966 02-6341943<br>
             <strong>Email:</strong>journeys.of.faith@gmail.com<br>
           </p>
