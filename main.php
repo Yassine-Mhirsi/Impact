@@ -515,6 +515,7 @@ Good value for the price. Pros: spacious room, accommodating reception staff. Co
                       </div>
                     </div>
                   </div>
+                  <!-- redyctfvg -->
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
                     Our stay at Swiss Hotel was amazing. Less than 1 min walk to Masjid Al Haram. Great room & facilities, luxurious decor, washroom was clean, brilliant staff at reception. housekeeping staff Sualleh Saeed service was amazing. No complaints at all. Will stay here again and again in future... 
