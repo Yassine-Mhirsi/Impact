@@ -190,9 +190,8 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <div>
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+                  <img src="assets/img/wahida.jfif" class="testimonial-img" alt="">
+                  <h3>Widdad el-Sharif</h3>
                 </div>
               </div>
 

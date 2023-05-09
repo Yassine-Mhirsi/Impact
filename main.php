@@ -479,8 +479,7 @@ if (isset($_SESSION['alogin'])) {
 
         <div class="section-header">
           <h2>Testimonials</h2>
-          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos
-            quam</p>
+          <p>Welcome to our testimonials section! Here, you'll find feedback from some of our satisfied customers who have experienced our services</p>
         </div>
 
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -490,10 +489,9 @@ if (isset($_SESSION['alogin'])) {
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <img src="assets/img/ramzi.jfif" class="testimonial-img flex-shrink-0" alt="">
                     <div>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
+                      <h3>Ramzi Assaf</h3>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                           class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -502,8 +500,8 @@ if (isset($_SESSION['alogin'])) {
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    I can fairly say that Hibatullah Hotel is a decent hotel at very reasonable price
+Good value for the price. Pros: spacious room, accommodating reception staff. Cons: wifi not working in room. Overall clean despite few dirty spots in room, the way to haram is not far but steep hill up and down both ways. Not suitable for peope with compromised mobility. 15, 20min walk to haram gate, goes through busy roads. Breakfast was bread cheese and olives, also had coffee in lobby cafe. You can use hotel as dorm , spend day in haram ,eat in nearby restaurants.
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -514,10 +512,9 @@ if (isset($_SESSION['alogin'])) {
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                    <img src="assets/img/wahida.jfif" class="testimonial-img flex-shrink-0" alt="">
                     <div>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
+                      <h3>Widdad el-Sharif</h3>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                           class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -526,8 +523,7 @@ if (isset($_SESSION['alogin'])) {
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    Our stay at Swiss Hotel was amazing. Less than 1 min walk to Masjid Al Haram. Great room & facilities, luxurious decor, washroom was clean, brilliant staff at reception. housekeeping staff Sualleh Saeed service was amazing. No complaints at all. Will stay here again and again in future... 
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
