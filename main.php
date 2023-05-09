@@ -387,11 +387,10 @@ if (isset($_SESSION['alogin'])) {
     <section id="call-to-action" class="call-to-action">
       <div class="container text-center" data-aos="zoom-out">
         <a href="assets/vid/haj.mp4 " class="glightbox play-btn"></a>
-        <h3>Call To Action</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h3>Introduction</h3>
+        <p> A brief itroduction video about hajj and umrah.
         </p>
-        <a class="cta-btn" href="#">Call To Action</a>
+        <a class="cta-btn" href="#">Steps</a>
       </div>
     </section><!-- End Call To Action Section -->
 
