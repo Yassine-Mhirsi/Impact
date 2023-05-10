@@ -395,9 +395,7 @@ if (isset($_SESSION['alogin'])) {
       <div class="container text-center" data-aos="zoom-out">
         <a href="assets/vid/haj.mp4 " class="glightbox play-btn"></a>
         <h3>Introduction</h3>
-        <p> A brief itroduction video about hajj and umrah.
-        </p>
-        <a class="cta-btn" href="#">Steps</a>
+        <p> A brief itroduction video about hajj and umrah. </p>
       </div>
     </section><!-- End Call To Action Section -->
 
@@ -631,21 +629,21 @@ if (isset($_SESSION['alogin'])) {
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
                 <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                    src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt=""></a>
+                    src="assets/img/res1.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="restaurant1.php" title="More Details">restaurant 1</a></h4>
+                  <p>The Oasis</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app"
-                  class="glightbox"><img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt=""></a>
+                <a  href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img width="500" src="assets/img/s4.jfif" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="shop1.php" title="More Details">shop 1</a></h4>
+                  <p>Red Sea Mall</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -653,10 +651,10 @@ if (isset($_SESSION['alogin'])) {
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
                 <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                    src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
+                    width="500" src="assets/img/b4.jfif" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="bus.php" title="More Details">Transport 1</a></h4>
+                  <p>Bus</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -664,43 +662,21 @@ if (isset($_SESSION['alogin'])) {
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                    src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
+                    src="assets/img/hotel2i.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Hotel 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                    src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app"
-                  class="glightbox"><img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="hotel2.php" title="More Details">Hotel 2</a></h4>
+                  <p>HIBATULLAH Hotel Makkah</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                    src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img width="500"
+                    src="assets/img/t4.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="taxi.php" title="More Details">transport 2</a></h4>
+                  <p>Taxi</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -708,32 +684,10 @@ if (isset($_SESSION['alogin'])) {
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                    src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
+                    src="assets/img/kis1.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-product">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                    src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app"
-                  class="glightbox"><img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="hotel3.php" title="More Details">Hotel 3</a></h4>
+                  <p>Al Kiswah Towers Hotel</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
