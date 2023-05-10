@@ -124,8 +124,15 @@ if (isset($_SESSION['alogin'])) {
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
           <li><a href="blog.php">Blog</a></li>
+
+          <li class="dropdown"><a href="#"><span>Steps</span><i
+                class="bi bi-chevro  n-down dropdown-indicator bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="hajjstep.php">Hajj</a></li>
+              <li><a href="umrah.php">Omrah</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="#"><span>Features</span><i
                 class="bi bi-chevro  n-down dropdown-indicator bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -470,135 +477,117 @@ if (isset($_SESSION['alogin'])) {
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
+        <d iv class="section-header">
           <h2>Testimonials</h2>
-          <p>Welcome to our testimonials section! Here, you'll find feedback from some of our satisfied customers who have experienced our services</p>
+          <p>Welcome to our testimonials section! Here, you'll find feedback from some of our satisfied customers who
+            have experienced our services</p>
+      </div>
+
+      <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <div class="d-flex align-items-center">
+                  <img src="assets/img/ramzi.jfif" class="testimonial-img flex-shrink-0" alt="">
+                  <div>
+                    <h3>Ramzi Assaf</h3>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  I can fairly say that Hibatullah Hotel is a decent hotel at very reasonable price
+                  Good value for the price. Pros: spacious room, accommodating reception staff. Cons: wifi not working
+                  in room. Overall clean despite few dirty spots in room, the way to haram is not far but steep hill up
+                  and down both ways. Not suitable for peope with compromised mobility. 15, 20min walk to haram gate,
+                  goes through busy roads. Breakfast was bread cheese and olives, also had coffee in lobby cafe. You can
+                  use hotel as dorm , spend day in haram ,eat in nearby restaurants.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <div class="d-flex align-items-center">
+                  <img src="assets/img/wahida.jfif" class="testimonial-img flex-shrink-0" alt="">
+                  <div>
+                    <h3>Widdad el-Sharif</h3>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- redyctfvg -->
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Our stay at Swiss Hotel was amazing. Less than 1 min walk to Masjid Al Haram. Great room & facilities,
+                  luxurious decor, washroom was clean, brilliant staff at reception. housekeeping staff Sualleh Saeed
+                  service was amazing. No complaints at all. Will stay here again and again in future...
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <div class="d-flex align-items-center">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
+                  <div>
+                    <h3>Jena Karlis</h3>
+                    <h4>Store Owner</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <div class="d-flex align-items-center">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
+                  <div>
+                    <h3>Matt Brandon</h3>
+                    <h4>Freelancer</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
+                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
         </div>
-
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/img/ramzi.jfif" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Ramzi Assaf</h3>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    I can fairly say that Hibatullah Hotel is a decent hotel at very reasonable price
-Good value for the price. Pros: spacious room, accommodating reception staff. Cons: wifi not working in room. Overall clean despite few dirty spots in room, the way to haram is not far but steep hill up and down both ways. Not suitable for peope with compromised mobility. 15, 20min walk to haram gate, goes through busy roads. Breakfast was bread cheese and olives, also had coffee in lobby cafe. You can use hotel as dorm , spend day in haram ,eat in nearby restaurants.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/img/wahida.jfif" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Widdad el-Sharif</h3>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- redyctfvg -->
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Our stay at Swiss Hotel was amazing. Less than 1 min walk to Masjid Al Haram. Great room & facilities, luxurious decor, washroom was clean, brilliant staff at reception. housekeeping staff Sualleh Saeed service was amazing. No complaints at all. Will stay here again and again in future... 
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                    tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Matt Brandon</h3>
-                      <h4>Freelancer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                    minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-                    culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
       </div>
     </section><!-- End Testimonials Section -->
@@ -767,7 +756,7 @@ Good value for the price. Pros: spacious room, accommodating reception staff. Co
       </div>
     </section><!-- End Portfolio Section -->
 
-    
+
 
 
     <!-- ======= Frequently Asked Questions Section ======= -->
@@ -889,7 +878,7 @@ Good value for the price. Pros: spacious room, accommodating reception staff. Co
           </div>
 
         </div>
-        </div>
+      </div>
     </section><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
@@ -900,82 +889,41 @@ Good value for the price. Pros: spacious room, accommodating reception staff. Co
           <h2>Recent Blog Posts</h2>
         </div>
         <div class="row gy-4">
-
           <div class="col-xl-4 col-md-6">
             <article>
-
               <div class="post-img">
                 <img src="assets/img/travelling.jpg" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">articles</p>
+              <p class="post-category">Articles</p>
 
               <h2 class="title">
-                <a href="blog-1.html">Duas For Travelling</a>
+                <a href="blog-1.php">Duas For Travelling</a>
               </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
           <div class="col-xl-4 col-md-6">
             <article>
-
               <div class="post-img">
                 <img src="assets/img/mistakes.jpg" alt="" class="img-fluid">
               </div>
-
-              <p class="post-category">articles</p>
-
+              <p class="post-category">Articles</p>
               <h2 class="title">
                 <a href="blog-2.php">Common Mistakes people do in Umrah and Hajj</a>
               </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
           <div class="col-xl-4 col-md-6">
             <article>
-
               <div class="post-img">
                 <img src="assets/img/blog/tip.jpg" alt="" class="img-fluid">
               </div>
-
-              <p class="post-category">articles</p>
-
+              <p class="post-category">Articles</p>
               <h2 class="title">
                 <a href="blog-3.php">Tips for Hajj you need to know</a>
               </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
@@ -1037,16 +985,6 @@ Good value for the price. Pros: spacious room, accommodating reception staff. Co
             <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
             <form action="main-feedback.php" method="post" class="php-email-form">
               <?php if (isset($_SESSION['alogin'])) { ?>
-                <!-- <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="feedback-name" class="form-control" id="name" placeholder="Your Name"
-                    required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="feedback-email" id="email" placeholder="Your Email"
-                    required>
-                </div>
-              </div> -->
               <?php } else { ?>
                 <div class="row">
                   <div class="col-md-6 form-group">
@@ -1106,30 +1044,25 @@ Good value for the price. Pros: spacious room, accommodating reception staff. Co
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Prayer times</a></li>
+            <li><a href="#">Qibla Finder</a></li>
+            <li><a href="#">Zakat Calculator</a></li>
+            <li><a href="#">Calender</a></li>
+            <li><a href="#">Donate</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            Old Makkah Road<br>
-            Jeddah, 33247<br>
-            Saudi Arabia <br><br>
-            <strong>Phone:</strong>+966 02-6341943<br>
-            <strong>Email:</strong>journeys.of.faith@gmail.com<br>
+            <strong>Phone: </strong>+966 02-6341943<br>
+            <strong>Email: </strong>journeys.of.faith@gmail.com<br>
           </p>
 
         </div>

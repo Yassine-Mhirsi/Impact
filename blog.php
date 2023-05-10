@@ -16,7 +16,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Blog</title>
+  <title>Faith - Blog</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,7 +27,9 @@ $result = $query->fetch(PDO::FETCH_OBJ);
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -69,44 +71,87 @@ $result = $query->fetch(PDO::FETCH_OBJ);
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-    <a href="main.php" class="logo d-flex align-items-center">
+      <a href="main.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Journeys of Faith<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="main.php">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="main.php#hero">Home</a></li>
+          <li><a href="main.php#about">About</a></li>
+          <li><a href="main.php#services">Services</a></li>
+          <li><a href="main.php#portfolio">Portfolio</a></li>
           <li><a href="blog.php">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+
+          <li class="dropdown"><a href="#"><span>Steps</span><i
+                class="bi bi-chevro  n-down dropdown-indicator bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="hajjstep.php">Hajj</a></li>
+              <li><a href="umrah.php">Omrah</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Features</span><i
+                class="bi bi-chevro  n-down dropdown-indicator bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li class="dropdown"><a href=""><span>Prayer Times</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <?php
+                  // prayer times
+                  $year = date('Y');
+                  $month = date('m');
+                  $city = 'Tunis';
+                  $ch = curl_init();
+                  curl_setopt($ch, CURLOPT_URL, "http://api.aladhan.com/v1/calendarByCity/$year/$month?city=$city&country=Tunisia");
+                  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                  $response = curl_exec($ch);
+                  curl_close($ch);
+                  $data = json_decode($response);
+                  $fajr = $data->data[0]->timings->Fajr;
+                  $sunrise = $data->data[0]->timings->Sunrise;
+                  $dhuhr = $data->data[0]->timings->Dhuhr;
+                  $asr = $data->data[0]->timings->Asr;
+                  $maghrib = $data->data[0]->timings->Maghrib;
+                  $isha = $data->data[0]->timings->Isha;
+                  ?>
+                  <li><a href="#">
+                      <?php echo "Fajr: $fajr" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Sunrise: $sunrise" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Dhuhr: $dhuhr" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Asr: $asr" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Maghrib: $maghrib" ?>
+                    </a></li>
+                  <li><a href="#">
+                      <?php echo "Isha: $isha" ?>
+                    </a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="qibla.php">Qibla Finder</a></li>
+              <li><a href="zakat/index.php">Zakat Calculator</a></li>
+              <li><a href="calender.php">Calender</a></li>
+              <li><a href="donate.php">Donate</a></li>
             </ul>
           </li>
           <?php if (isset($_SESSION['alogin'])) { ?>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <!-- <i class="bi bi-person" style="font-size: 2em;"></i> -->
-                <img style="height:40px;width:40px;"src="images/<?php echo htmlentities($result->image);?>">
+                <img style="height:40px;width:40px;border-radius: 50%;"
+                  src="images/<?php echo htmlentities($result->image); ?>">
               </a>
               <ul class="dropdown-menu">
-                <li><a href="profile.php"><?php echo htmlentities($result->name);?></a></li>
+                <li><a href="profile.php">
+                    <?php echo htmlentities($result->name); ?>
+                  </a></li>
                 <li><a href="logout.php">Sign Out</a></li>
               </ul>
             </li>
@@ -121,6 +166,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
             </li>
           <?php } ?>
         </ul>
+
       </nav><!-- .navbar -->
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -173,16 +219,6 @@ $result = $query->fetch(PDO::FETCH_OBJ);
                 <a href="blog-1.php">Duas For Travelling</a>
               </h2>
 
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
@@ -198,17 +234,6 @@ $result = $query->fetch(PDO::FETCH_OBJ);
               <h2 class="title">
                 <a href="blog-2.php">Common Mistakes people do in Umrah and Hajj</a>
               </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
@@ -224,17 +249,6 @@ $result = $query->fetch(PDO::FETCH_OBJ);
               <h2 class="title">
                 <a href="blog-3.php">Tips for Hajj you need to know</a>
               </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
@@ -250,17 +264,6 @@ $result = $query->fetch(PDO::FETCH_OBJ);
               <h2 class="title">
                 <a href="blog-4.php">How to save money for Hajj</a>
               </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-4.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Lisa Neymar</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 30, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
@@ -268,7 +271,7 @@ $result = $query->fetch(PDO::FETCH_OBJ);
             <article>
 
               <div class="post-img">
-               <center><img width="450" src="assets/img/blog/blog-5-v.jfif" alt="" class="img-fluid"></center>
+                <center><img width="450" src="assets/img/blog/blog-5-v.jfif" alt="" class="img-fluid"></center>
               </div>
 
               <p class="post-category">articles</p>
@@ -276,17 +279,6 @@ $result = $query->fetch(PDO::FETCH_OBJ);
               <h2 class="title">
                 <a href="blog-5.php">How to stay safe during hajj</a>
               </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-5.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Denis Peterson</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 30, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
@@ -302,17 +294,6 @@ $result = $query->fetch(PDO::FETCH_OBJ);
               <h2 class="title">
                 <a href="blog-6.php">The Importance Of Performing Umrah</a>
               </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-6.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author-list">Mika Lendon</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Feb 14, 2022</time>
-                  </p>
-                </div>
-              </div>
-
             </article>
           </div><!-- End post list item -->
 
@@ -335,10 +316,9 @@ $result = $query->fetch(PDO::FETCH_OBJ);
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="main.php" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <h1>Journeys of Faith<span>.</span></h1>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+        donna mare fermentum iaculis eu non diam phasellus.</p> -->
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -353,30 +333,25 @@ $result = $query->fetch(PDO::FETCH_OBJ);
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Prayer times</a></li>
+            <li><a href="#">Qibla Finder</a></li>
+            <li><a href="#">Zakat Calculator</a></li>
+            <li><a href="#">Calender</a></li>
+            <li><a href="#">Donate</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
+            <strong>Phone: </strong>+966 02-6341943<br>
+            <strong>Email: </strong>journeys.of.faith@gmail.com<br>
           </p>
 
         </div>
@@ -386,21 +361,23 @@ $result = $query->fetch(PDO::FETCH_OBJ);
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+        &copy;
+        Journeys of Faith<span>.</span>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
 
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 

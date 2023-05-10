@@ -76,16 +76,16 @@ if (isset($_POST['comment-submit'])) {
 </head>
 
 <body>
-<script>
+  <script>
     var comment = document.getElementById("comment").value;
     function validateForm() {
-        if (comment == "") {
-            alert("Please enter a comment.");
-            return false;
-            
-        }
+      if (comment == "") {
+        alert("Please enter a comment.");
+        return false;
+
+      }
     }
-</script>
+  </script>
 
   <!-- ======= Header ======= -->
   <section id="topbar" class="topbar d-flex align-items-center">
@@ -208,7 +208,7 @@ if (isset($_POST['comment-submit'])) {
             <article class="blog-details">
 
               <div class="post-img">
-                <center><img width="1000" src="assets/img/blog/save1.jfif" alt="" class="img-fluid" ></center>
+                <center><img width="1000" src="assets/img/blog/save1.jfif" alt="" class="img-fluid"></center>
               </div>
 
               <h2 class="title">Tips on How You Can Save Money For Hajj</h2>
@@ -226,39 +226,55 @@ if (isset($_POST['comment-submit'])) {
 
               <div class="content">
                 <p>
-                    Every Muslim must have the desire to go for Hajj. As a complement to the other pillars of Islam, namely, saying the two sentences confession of faith, do five-time prayers, pay alms or zakat, fasting in the holy month of Ramadan. So, Hajj is the fifth pillar of Islam.
-                    Muslim need to prepare a quite huge amount of money for Hajj especially for people with small incomes. Yet, surely there is no reason to reach Muslim’s dream to pray in Mecca. Therefore, we need some strategies to manage every income that comes in.
-                    Here are tips to save your earning that will bring you to the holy land, Mecca:
+                  Every Muslim must have the desire to go for Hajj. As a complement to the other pillars of Islam,
+                  namely, saying the two sentences confession of faith, do five-time prayers, pay alms or zakat, fasting
+                  in the holy month of Ramadan. So, Hajj is the fifth pillar of Islam.
+                  Muslim need to prepare a quite huge amount of money for Hajj especially for people with small incomes.
+                  Yet, surely there is no reason to reach Muslim’s dream to pray in Mecca. Therefore, we need some
+                  strategies to manage every income that comes in.
+                  Here are tips to save your earning that will bring you to the holy land, Mecca:
                 </p>
                 <h3>1. Save 20% off Your Earning on Hajj Saving Account</h3>
                 <blockquote>
                   <p>
-                    Determine the amount of the percentage that must be saved into the Hajj saving account. Take about 10-20% of monthly income. So, there will be money to save your hajj, with approximately the same amount every month. The same amount of value and consistent every month, will be more easily calculated and estimated when it will meet the target.
+                    Determine the amount of the percentage that must be saved into the Hajj saving account. Take about
+                    10-20% of monthly income. So, there will be money to save your hajj, with approximately the same
+                    amount every month. The same amount of value and consistent every month, will be more easily
+                    calculated and estimated when it will meet the target.
                   </p>
                 </blockquote>
                 <h3>2. Spend Money Only on You Need, Not What You Want</h3>
                 <blockquote>
-                    <p>
-                        Use money only for primary things. Don't spend money just because you like or want to. This will have an impact on your expenses, which will also increase. For example, if you always have breakfast and lunch outside, try to reduce the intensity. Having breakfast from home before leaving for work.
-                        Or, you can reduce visiting shopping mall since that place always provide what you want like clothes, shoes, bags etc where those stuffs are not really needed in immediate time.
-                    </p>
+                  <p>
+                    Use money only for primary things. Don't spend money just because you like or want to. This will
+                    have an impact on your expenses, which will also increase. For example, if you always have breakfast
+                    and lunch outside, try to reduce the intensity. Having breakfast from home before leaving for work.
+                    Or, you can reduce visiting shopping mall since that place always provide what you want like
+                    clothes, shoes, bags etc where those stuffs are not really needed in immediate time.
+                  </p>
                 </blockquote>
                 <h3>3. Make Note Before Shopping</h3>
                 <blockquote>
-                    <p>
-                        Shopping list need to be made before going you go shopping . The goal is to prevent buy something you don't need and stick to the plan. Therefore, it is necessary to check the needs in the house whether it is used up, or will run out, and need to be purchased immediately. Other than those noted, it should not be purchased.
-                        This point is very crucial since how many of us are going crazy when in shopping centers offer a massive price discount. Don't get tempted with the price discounts.
-                    </p>
+                  <p>
+                    Shopping list need to be made before going you go shopping . The goal is to prevent buy something
+                    you don't need and stick to the plan. Therefore, it is necessary to check the needs in the house
+                    whether it is used up, or will run out, and need to be purchased immediately. Other than those
+                    noted, it should not be purchased.
+                    This point is very crucial since how many of us are going crazy when in shopping centers offer a
+                    massive price discount. Don't get tempted with the price discounts.
+                  </p>
                 </blockquote>
                 <center><img width="500" src="assets/img/blog/save.jfif" class="img-fluid" alt=""></center>
 
                 <h3>4. Think Twice Before Buying Something</h3>
                 <blockquote>
-                    <p>
-                        For example, if you want to buy clothes, shoes or bags, just make sure that your existing stuffs has been damaged, torn, or can no longer be used. If your stuffs are still good, you can still use them. You should save your money instead of spending it for unnecessary goods.
-                    </p>
+                  <p>
+                    For example, if you want to buy clothes, shoes or bags, just make sure that your existing stuffs has
+                    been damaged, torn, or can no longer be used. If your stuffs are still good, you can still use them.
+                    You should save your money instead of spending it for unnecessary goods.
+                  </p>
                 </blockquote>
-               
+
               </div><!-- End post content -->
 
               <div class="meta-bottom">
@@ -295,124 +311,125 @@ if (isset($_POST['comment-submit'])) {
 
 
 
-            <?php  include('comments.php');?>
+            <?php include('comments.php'); ?>
 
 
 
-              <!-- End comment #5 -->
-              <div class="reply-form">
-                <h4>Leave a Reply</h4>
-                <!-- <p>  Your email address will not be published. Required fields are marked * </p> -->
-                <form method="POST" onsubmit="return validateForm()">
-                  <div class="row">
-                    <div class="col form-group">
-                      <textarea name="comment" id="comment" rows="4" class="form-control" placeholder="Your Comment" Required></textarea>
-                    </div>
+            <!-- End comment #5 -->
+            <div class="reply-form">
+              <h4>Leave a Reply</h4>
+              <!-- <p>  Your email address will not be published. Required fields are marked * </p> -->
+              <form method="POST" onsubmit="return validateForm()">
+                <div class="row">
+                  <div class="col form-group">
+                    <textarea name="comment" id="comment" rows="4" class="form-control" placeholder="Your Comment"
+                      Required></textarea>
                   </div>
-                  <button type="submit" name="comment-submit" class="btn btn-primary">Post Comment</button>
+                </div>
+                <button type="submit" name="comment-submit" class="btn btn-primary">Post Comment</button>
 
-                </form>
+              </form>
+
+            </div>
+
+          </div><!-- End blog comments -->
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <div class="sidebar">
+
+            <div class="sidebar-item search-form">
+              <h3 class="sidebar-title">Search</h3>
+              <form action="" class="mt-3">
+                <input type="text">
+                <button type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div><!-- End sidebar search formn-->
+
+            <div class="sidebar-item categories">
+              <h3 class="sidebar-title">Categories</h3>
+              <ul class="mt-3">
+                <li><a href="#">General <span>(25)</span></a></li>
+                <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                <li><a href="#">Travel <span>(5)</span></a></li>
+                <li><a href="#">Design <span>(22)</span></a></li>
+                <li><a href="#">Creative <span>(8)</span></a></li>
+                <li><a href="#">Educaion <span>(14)</span></a></li>
+              </ul>
+            </div><!-- End sidebar categories-->
+
+            <div class="sidebar-item recent-posts">
+              <h3 class="sidebar-title">Recent Posts</h3>
+
+              <div class="mt-3">
+
+                <div class="post-item mt-3">
+                  <img src="assets/img/blog/blog-recent-1.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Nihil blanditiis at in nihil autem</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
+
+                <div class="post-item">
+                  <img src="assets/img/blog/blog-recent-2.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Quidem autem et impedit</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
+
+                <div class="post-item">
+                  <img src="assets/img/blog/blog-recent-3.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Id quia et et ut maxime similique occaecati ut</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
+
+                <div class="post-item">
+                  <img src="assets/img/blog/blog-recent-4.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Laborum corporis quo dara net para</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
+
+                <div class="post-item">
+                  <img src="assets/img/blog/blog-recent-5.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Et dolores corrupti quae illo quod dolor</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
 
               </div>
 
-            </div><!-- End blog comments -->
+            </div><!-- End sidebar recent posts-->
 
-          </div>
+            <div class="sidebar-item tags">
+              <h3 class="sidebar-title">Tags</h3>
+              <ul class="mt-3">
+                <li><a href="#">App</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Smart</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+            </div><!-- End sidebar tags-->
 
-          <div class="col-lg-4">
+          </div><!-- End Blog Sidebar -->
 
-            <div class="sidebar">
-
-              <div class="sidebar-item search-form">
-                <h3 class="sidebar-title">Search</h3>
-                <form action="" class="mt-3">
-                  <input type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-              </div><!-- End sidebar search formn-->
-
-              <div class="sidebar-item categories">
-                <h3 class="sidebar-title">Categories</h3>
-                <ul class="mt-3">
-                  <li><a href="#">General <span>(25)</span></a></li>
-                  <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                  <li><a href="#">Travel <span>(5)</span></a></li>
-                  <li><a href="#">Design <span>(22)</span></a></li>
-                  <li><a href="#">Creative <span>(8)</span></a></li>
-                  <li><a href="#">Educaion <span>(14)</span></a></li>
-                </ul>
-              </div><!-- End sidebar categories-->
-
-              <div class="sidebar-item recent-posts">
-                <h3 class="sidebar-title">Recent Posts</h3>
-
-                <div class="mt-3">
-
-                  <div class="post-item mt-3">
-                    <img src="assets/img/blog/blog-recent-1.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-2.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Quidem autem et impedit</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-3.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Id quia et et ut maxime similique occaecati ut</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-4.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Laborum corporis quo dara net para</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-5.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Et dolores corrupti quae illo quod dolor</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                </div>
-
-              </div><!-- End sidebar recent posts-->
-
-              <div class="sidebar-item tags">
-                <h3 class="sidebar-title">Tags</h3>
-                <ul class="mt-3">
-                  <li><a href="#">App</a></li>
-                  <li><a href="#">IT</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Mac</a></li>
-                  <li><a href="#">Design</a></li>
-                  <li><a href="#">Office</a></li>
-                  <li><a href="#">Creative</a></li>
-                  <li><a href="#">Studio</a></li>
-                  <li><a href="#">Smart</a></li>
-                  <li><a href="#">Tips</a></li>
-                  <li><a href="#">Marketing</a></li>
-                </ul>
-              </div><!-- End sidebar tags-->
-
-            </div><!-- End Blog Sidebar -->
-
-          </div>
         </div>
+      </div>
 
       </div>
     </section><!-- End Blog Details Section -->
@@ -425,11 +442,9 @@ if (isset($_POST['comment-submit'])) {
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="main.php" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <h1>Journeys of Faith<span>.</span></h1>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+        donna mare fermentum iaculis eu non diam phasellus.</p> -->
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -444,30 +459,25 @@ if (isset($_POST['comment-submit'])) {
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Prayer times</a></li>
+            <li><a href="#">Qibla Finder</a></li>
+            <li><a href="#">Zakat Calculator</a></li>
+            <li><a href="#">Calender</a></li>
+            <li><a href="#">Donate</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
+            <strong>Phone: </strong>+966 02-6341943<br>
+            <strong>Email: </strong>journeys.of.faith@gmail.com<br>
           </p>
 
         </div>
@@ -477,14 +487,15 @@ if (isset($_POST['comment-submit'])) {
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+        &copy;
+        Journeys of Faith<span>.</span>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
 
@@ -507,6 +518,7 @@ if (isset($_POST['comment-submit'])) {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+
 </body>
-</html> 
+
+</html>

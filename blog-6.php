@@ -76,16 +76,16 @@ if (isset($_POST['comment-submit'])) {
 </head>
 
 <body>
-<script>
+  <script>
     var comment = document.getElementById("comment").value;
     function validateForm() {
-        if (comment == "") {
-            alert("Please enter a comment.");
-            return false;
-            
-        }
+      if (comment == "") {
+        alert("Please enter a comment.");
+        return false;
+
+      }
     }
-</script>
+  </script>
 
   <!-- ======= Header ======= -->
   <section id="topbar" class="topbar d-flex align-items-center">
@@ -226,14 +226,29 @@ if (isset($_POST['comment-submit'])) {
 
               <div class="content">
                 <p>
-                    The fact that the history of Umrah is laden with a lot of religious struggles and battles indicates that Umrah has always been a pilgrimage of prime importance.</p>
-                    <p> It is a direct Sunnah of Prophet Muhammad and is often referred to as a spiritual “quick-fix” for those who cannot perform the Hajj pilgrimage for any reason.
-                    Umrah offers the best way for Muslims to pray for all their needs, seek forgiveness for their sins and refresh their faith. </p>
-                    <p> It is believed that performing Umrah cleanses all sins and purifies the mind, body and spirit.</p>
-                    <p> While performing Umrah, pilgrims get the opportunity to be the guest in the house of Allah. Many pilgrims share that they feel calm and relaxed while they are on the religious journey and can sense the blessings of Allah showered upon them. Umrah is equivalent to performing jihad and rewards of performing Umrah during Ramadan equals that of Hajj. As Prophet Muhammad has made people aware of the benefits of performing Umrah, it further strengthens the faith of an individual in the almighty Allah. Pilgrims also get expiation from their sins and are saved from hellfire for their wrong deeds.
-                    While the benefits are many, performing Umrah in itself is a divine experience.</p>
-                    <p> Millions of pilgrim head towards the holy city of Makkah in order to the complete this religious journey and minor pilgrimage in Islam. The month of Ramadan sees a significant surge in the number of pilgrims due to the holiness of the month and the journey.
-                    Prophet Muhammad was a messenger between Allah and believers. He devoted his life to showing believers the best ways of making prayers directly to Allah. He considered Umrah as one of the most effective ways of worship. Also, according to the history of Umrah, Prophet Muhammad performed Umrah four times during his lifetime. Umrah is believed to be a special form of worship for coming into direct contact with Allah and seeking favours. Just like fasting in Ramadan can bring devout Muslims closer to God, performing Umrah can help believers make prayers directly to Allah.
+                  The fact that the history of Umrah is laden with a lot of religious struggles and battles indicates
+                  that Umrah has always been a pilgrimage of prime importance.</p>
+                <p> It is a direct Sunnah of Prophet Muhammad and is often referred to as a spiritual “quick-fix” for
+                  those who cannot perform the Hajj pilgrimage for any reason.
+                  Umrah offers the best way for Muslims to pray for all their needs, seek forgiveness for their sins and
+                  refresh their faith. </p>
+                <p> It is believed that performing Umrah cleanses all sins and purifies the mind, body and spirit.</p>
+                <p> While performing Umrah, pilgrims get the opportunity to be the guest in the house of Allah. Many
+                  pilgrims share that they feel calm and relaxed while they are on the religious journey and can sense
+                  the blessings of Allah showered upon them. Umrah is equivalent to performing jihad and rewards of
+                  performing Umrah during Ramadan equals that of Hajj. As Prophet Muhammad has made people aware of the
+                  benefits of performing Umrah, it further strengthens the faith of an individual in the almighty Allah.
+                  Pilgrims also get expiation from their sins and are saved from hellfire for their wrong deeds.
+                  While the benefits are many, performing Umrah in itself is a divine experience.</p>
+                <p> Millions of pilgrim head towards the holy city of Makkah in order to the complete this religious
+                  journey and minor pilgrimage in Islam. The month of Ramadan sees a significant surge in the number of
+                  pilgrims due to the holiness of the month and the journey.
+                  Prophet Muhammad was a messenger between Allah and believers. He devoted his life to showing believers
+                  the best ways of making prayers directly to Allah. He considered Umrah as one of the most effective
+                  ways of worship. Also, according to the history of Umrah, Prophet Muhammad performed Umrah four times
+                  during his lifetime. Umrah is believed to be a special form of worship for coming into direct contact
+                  with Allah and seeking favours. Just like fasting in Ramadan can bring devout Muslims closer to God,
+                  performing Umrah can help believers make prayers directly to Allah.
                 </p>
 
               </div><!-- End post content -->
@@ -272,124 +287,125 @@ if (isset($_POST['comment-submit'])) {
 
 
 
-            <?php  include('comments.php');?>
+            <?php include('comments.php'); ?>
 
 
 
-              <!-- End comment #5 -->
-              <div class="reply-form">
-                <h4>Leave a Reply</h4>
-                <!-- <p>  Your email address will not be published. Required fields are marked * </p> -->
-                <form method="POST" onsubmit="return validateForm()">
-                  <div class="row">
-                    <div class="col form-group">
-                      <textarea name="comment" id="comment" rows="4" class="form-control" placeholder="Your Comment" Required></textarea>
-                    </div>
+            <!-- End comment #5 -->
+            <div class="reply-form">
+              <h4>Leave a Reply</h4>
+              <!-- <p>  Your email address will not be published. Required fields are marked * </p> -->
+              <form method="POST" onsubmit="return validateForm()">
+                <div class="row">
+                  <div class="col form-group">
+                    <textarea name="comment" id="comment" rows="4" class="form-control" placeholder="Your Comment"
+                      Required></textarea>
                   </div>
-                  <button type="submit" name="comment-submit" class="btn btn-primary">Post Comment</button>
+                </div>
+                <button type="submit" name="comment-submit" class="btn btn-primary">Post Comment</button>
 
-                </form>
+              </form>
+
+            </div>
+
+          </div><!-- End blog comments -->
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <div class="sidebar">
+
+            <div class="sidebar-item search-form">
+              <h3 class="sidebar-title">Search</h3>
+              <form action="" class="mt-3">
+                <input type="text">
+                <button type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div><!-- End sidebar search formn-->
+
+            <div class="sidebar-item categories">
+              <h3 class="sidebar-title">Categories</h3>
+              <ul class="mt-3">
+                <li><a href="#">General <span>(25)</span></a></li>
+                <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                <li><a href="#">Travel <span>(5)</span></a></li>
+                <li><a href="#">Design <span>(22)</span></a></li>
+                <li><a href="#">Creative <span>(8)</span></a></li>
+                <li><a href="#">Educaion <span>(14)</span></a></li>
+              </ul>
+            </div><!-- End sidebar categories-->
+
+            <div class="sidebar-item recent-posts">
+              <h3 class="sidebar-title">Recent Posts</h3>
+
+              <div class="mt-3">
+
+                <div class="post-item mt-3">
+                  <img src="assets/img/blog/blog-recent-1.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Nihil blanditiis at in nihil autem</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
+
+                <div class="post-item">
+                  <img src="assets/img/blog/blog-recent-2.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Quidem autem et impedit</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
+
+                <div class="post-item">
+                  <img src="assets/img/blog/blog-recent-3.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Id quia et et ut maxime similique occaecati ut</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
+
+                <div class="post-item">
+                  <img src="assets/img/blog/blog-recent-4.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Laborum corporis quo dara net para</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
+
+                <div class="post-item">
+                  <img src="assets/img/blog/blog-recent-5.jpg" alt="">
+                  <div>
+                    <h4><a href="blog-details.php">Et dolores corrupti quae illo quod dolor</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
+                </div><!-- End recent post item-->
 
               </div>
 
-            </div><!-- End blog comments -->
+            </div><!-- End sidebar recent posts-->
 
-          </div>
+            <div class="sidebar-item tags">
+              <h3 class="sidebar-title">Tags</h3>
+              <ul class="mt-3">
+                <li><a href="#">App</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Smart</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+            </div><!-- End sidebar tags-->
 
-          <div class="col-lg-4">
+          </div><!-- End Blog Sidebar -->
 
-            <div class="sidebar">
-
-              <div class="sidebar-item search-form">
-                <h3 class="sidebar-title">Search</h3>
-                <form action="" class="mt-3">
-                  <input type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-              </div><!-- End sidebar search formn-->
-
-              <div class="sidebar-item categories">
-                <h3 class="sidebar-title">Categories</h3>
-                <ul class="mt-3">
-                  <li><a href="#">General <span>(25)</span></a></li>
-                  <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                  <li><a href="#">Travel <span>(5)</span></a></li>
-                  <li><a href="#">Design <span>(22)</span></a></li>
-                  <li><a href="#">Creative <span>(8)</span></a></li>
-                  <li><a href="#">Educaion <span>(14)</span></a></li>
-                </ul>
-              </div><!-- End sidebar categories-->
-
-              <div class="sidebar-item recent-posts">
-                <h3 class="sidebar-title">Recent Posts</h3>
-
-                <div class="mt-3">
-
-                  <div class="post-item mt-3">
-                    <img src="assets/img/blog/blog-recent-1.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Nihil blanditiis at in nihil autem</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-2.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Quidem autem et impedit</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-3.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Id quia et et ut maxime similique occaecati ut</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-4.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Laborum corporis quo dara net para</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                  <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-5.jpg" alt="">
-                    <div>
-                      <h4><a href="blog-details.php">Et dolores corrupti quae illo quod dolor</a></h4>
-                      <time datetime="2020-01-01">Jan 1, 2020</time>
-                    </div>
-                  </div><!-- End recent post item-->
-
-                </div>
-
-              </div><!-- End sidebar recent posts-->
-
-              <div class="sidebar-item tags">
-                <h3 class="sidebar-title">Tags</h3>
-                <ul class="mt-3">
-                  <li><a href="#">App</a></li>
-                  <li><a href="#">IT</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Mac</a></li>
-                  <li><a href="#">Design</a></li>
-                  <li><a href="#">Office</a></li>
-                  <li><a href="#">Creative</a></li>
-                  <li><a href="#">Studio</a></li>
-                  <li><a href="#">Smart</a></li>
-                  <li><a href="#">Tips</a></li>
-                  <li><a href="#">Marketing</a></li>
-                </ul>
-              </div><!-- End sidebar tags-->
-
-            </div><!-- End Blog Sidebar -->
-
-          </div>
         </div>
+      </div>
 
       </div>
     </section><!-- End Blog Details Section -->
@@ -402,11 +418,9 @@ if (isset($_POST['comment-submit'])) {
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
-          <a href="main.php" class="logo d-flex align-items-center">
-            <span>Impact</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <h1>Journeys of Faith<span>.</span></h1>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p> -->
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -421,30 +435,25 @@ if (isset($_POST['comment-submit'])) {
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Prayer times</a></li>
+            <li><a href="#">Qibla Finder</a></li>
+            <li><a href="#">Zakat Calculator</a></li>
+            <li><a href="#">Calender</a></li>
+            <li><a href="#">Donate</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
+            <strong>Phone: </strong>+966 02-6341943<br>
+            <strong>Email: </strong>journeys.of.faith@gmail.com<br>
           </p>
 
         </div>
@@ -454,14 +463,15 @@ if (isset($_POST['comment-submit'])) {
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+        &copy;
+        Journeys of Faith<span>.</span>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
 
