@@ -106,7 +106,7 @@ if (isset($_SESSION['alogin'])) {
       <a href="main.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Impact<span>.</span></h1>
+        <h1>Joureys of Faith<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
